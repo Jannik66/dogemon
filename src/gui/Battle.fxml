@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -22,19 +21,19 @@
                      <bottom>
                         <BorderPane maxHeight="60.0" maxWidth="200.0" prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER_LEFT">
                            <bottom>
-                              <ProgressBar fx:id="PlayerHP" prefWidth="200.0" progress="0.0" BorderPane.alignment="BOTTOM_LEFT" />
+                              <ProgressBar fx:id="PlayerHPbar" prefWidth="200.0" progress="0.0" BorderPane.alignment="BOTTOM_LEFT" />
                            </bottom>
                            <center>
                               <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                                  <children>
                                     <Label fx:id="PlayerName" layoutX="14.0" layoutY="8.0" prefWidth="100.0" text="You">
                                        <font>
-                                          <Font size="18.0" />
+                                          <Font name="Pixel UniCode Regular" size="25.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="120.0" layoutY="8.0" text="100/100">
+                                    <Label fx:id="PlayerHP" layoutX="128.0" layoutY="8.0" text="100/100">
                                        <font>
-                                          <Font size="18.0" />
+                                          <Font name="Pixel UniCode Regular" size="25.0" />
                                        </font>
                                     </Label>
                                  </children>
@@ -56,19 +55,19 @@
                      <top>
                         <BorderPane maxHeight="60.0" maxWidth="200.0" prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER_RIGHT">
                            <top>
-                              <ProgressBar fx:id="OpponentHP" prefWidth="200.0" progress="0.0" BorderPane.alignment="TOP_RIGHT" />
+                              <ProgressBar fx:id="OpponentHPbar" prefWidth="200.0" progress="0.0" BorderPane.alignment="TOP_RIGHT" />
                            </top>
                            <center>
                               <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                                  <children>
-                                    <Label fx:id="OpponentName" layoutX="14.0" layoutY="8.0" prefWidth="100.0" text="Bad Guy">
+                                    <Label fx:id="OpponentName" layoutX="14.0" layoutY="7.0" prefWidth="100.0" text="Bad Guy">
                                        <font>
-                                          <Font size="18.0" />
+                                          <Font name="Pixel UniCode Regular" size="25.0" />
                                        </font>
                                     </Label>
-                                    <Label layoutX="120.0" layoutY="8.0" text="100/100">
+                                    <Label fx:id="OpponentHP" layoutX="128.0" layoutY="7.0" text="100/100">
                                        <font>
-                                          <Font size="18.0" />
+                                          <Font name="Pixel UniCode Regular" size="25.0" />
                                        </font>
                                     </Label>
                                  </children>
