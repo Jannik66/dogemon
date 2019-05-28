@@ -1,3 +1,36 @@
 {
+    "monsters": [
+        {
+            "id": 1,
+            "name": "Lööpbröther",
+            "hp": 100,
+            "attackpower": 1,
+            "defensepower": 50,
+            "initiative": 3,
+            "picturepath": "pathewiofero",
+            "attackids": [ 1, 2 ]
+        },
+        {
+            "id": 2,
+            "name": "Lööpbröther",
+            "hp": 100,
+            "attackpower": 1,
+            "defensepower": 50,
+            "initiative": 3,
+            "picturepath": "pathewiofero",
+            "attackids": [ 1, 2 ]
+        },
+        {
+            "id": 3,
+            "name": "Lööpbröther",
+            "hp": 100,
+            "attackpower": 1,
+            "defensepower": 50,
+            "initiative": 3,
+            "picturepath": "pathewiofero",
+            "attackids": [ 1, 2 ]
+        }
+        
+    ]
     
 }
