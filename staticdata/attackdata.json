@@ -1,0 +1,23 @@
+{
+    "1": {
+        "name": "Nieser",
+        "targetmonster": "opponent",
+        "targetstat": "hp",
+        "impact": 12,
+        "imagepath": "patheiofo/to/image.png"
+    },
+    "2": {
+        "name": "Nieser",
+        "targetmonster": "opponent",
+        "targetstat": "hp",
+        "impact": 12,
+        "imagepath": "patheiofo/to/image.png"
+    },
+    "3": {
+        "name": "Nieser",
+        "targetmonster": "opponent",
+        "targetstat": "hp",
+        "impact": 12,
+        "imagepath": "patheiofo/to/image.png"
+    }
+}
