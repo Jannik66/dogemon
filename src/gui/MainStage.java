@@ -10,7 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
-public class MainStage extends Application{
+public class MainStage extends Application {
 
 	private Stage primaryStage;
 	private BorderPane rootLayout;
@@ -28,7 +28,7 @@ public class MainStage extends Application{
 	public void initRootLayout(){
 		try{
 			FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainStage.class.getResource("view/RootLayout.fxml"));
+            loader.setLocation(MainStage.class.getResource("Stage.fxml"));
             rootLayout = (BorderPane) loader.load();
             
             Scene scene = new Scene(rootLayout);
@@ -39,21 +39,29 @@ public class MainStage extends Application{
 		}
 	}
 	
-    // Zeigt GUI1 im Root Layout an
+
     public void showBattleGUI() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainStage.class.getResource("view/GUI1.fxml"));
+            loader.setLocation(MainStage.class.getResource("Battle.fxml"));
             AnchorPane BattleGUI = (AnchorPane) loader.load();
             
             rootLayout.setCenter(BattleGUI);
             
-            Battle battle = loader.getController();
-            battle.setMainStage(this);
-            
+            Battle controller = loader.getController();
+            controller.setMainStage(this);
+           
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    
+    public Stage getPrimaryStage() {
+    	return primaryStage;
+    }
+    
+    public static void main(String[] args) {
+    	launch(args);
     }
 
 }

@@ -31,5 +31,21 @@ public class Battle {
 		this.mainStage = mainStage;
 	}
 	
+	@FXML
+	private void Attk1() {
+		System.out.println("Zack!");
+	}
+	
+	@FXML
+	private void Attk2() {
+		System.out.println("Bätsch!");
+	}
+	
+	@FXML
+	private void Surrender() {
+		System.out.println("Runs away");
+		mainStage.showBattleGUI();
+	}
+	
 	
 }
