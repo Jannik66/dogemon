@@ -1,23 +1,29 @@
 {
-    "1": {
-        "name": "Nieser",
-        "targetmonster": "opponent",
-        "targetstat": "hp",
-        "impact": 12,
-        "imagepath": "patheiofo/to/image.png"
-    },
-    "2": {
-        "name": "Nieser",
-        "targetmonster": "opponent",
-        "targetstat": "hp",
-        "impact": 12,
-        "imagepath": "patheiofo/to/image.png"
-    },
-    "3": {
-        "name": "Nieser",
-        "targetmonster": "opponent",
-        "targetstat": "hp",
-        "impact": 12,
-        "imagepath": "patheiofo/to/image.png"
-    }
+    "attacks": [
+        {
+            "id": 1,
+            "name": "Nieser",
+            "targetmonster": "player",
+            "targetstat": "hp",
+            "impact": 12,
+            "imagepath": "patheiofo/to/image.png"
+        },
+        {
+            "id": 2,
+            "name": "Nieser",
+            "targetmonster": "opponent",
+            "targetstat": "hp",
+            "impact": 12,
+            "imagepath": "patheiofo/to/image.png"
+        },
+        {
+            "id": 3,
+            "name": "Nieser",
+            "targetmonster": "opponent",
+            "targetstat": "hp",
+            "impact": 12,
+            "imagepath": "patheiofo/to/image.png"
+        } 
+        
+    ]
 }
