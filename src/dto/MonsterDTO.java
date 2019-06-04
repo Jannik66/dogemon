@@ -23,7 +23,7 @@ public class MonsterDTO {
 		this.picturepath = picturepath;
 		this.attackids = attackids2;
 	}
-	
+
 	public int getHp() {
 		return hp;
 	}
