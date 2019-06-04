@@ -1,5 +1,7 @@
 package dto;
 
+import java.util.List;
+
 public class MonsterDTO {
 	private int id;
 	private String name;
@@ -8,10 +10,10 @@ public class MonsterDTO {
 	private int defensepower;
 	private int initiative;
 	private String picturepath;
-	private int[] attackids;
+	private List<Integer> attackids;
 
 	public MonsterDTO(int id, String name, int hp, int attackpower, int defensepower, int initiative,
-			String picturepath, int[] attackids) {
+			String picturepath, List<Integer> attackids2) {
 		this.id = id;
 		this.name = name;
 		this.hp = hp;
@@ -19,7 +21,7 @@ public class MonsterDTO {
 		this.defensepower = defensepower;
 		this.initiative = initiative;
 		this.picturepath = picturepath;
-		this.attackids = attackids;
+		this.attackids = attackids2;
 	}
 	
 	public int getHp() {
@@ -54,11 +56,11 @@ public class MonsterDTO {
 		this.initiative = initiative;
 	}
 
-	public int[] getAttackids() {
+	public List<Integer> getAttackids() {
 		return attackids;
 	}
 
-	public void setAttackids(int[] attackids) {
+	public void setAttackids(List<Integer> attackids) {
 		this.attackids = attackids;
 	}
 
