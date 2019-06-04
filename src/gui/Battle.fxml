@@ -91,13 +91,13 @@
                <center>
                   <Pane prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" text="Button" />
-                        <Button layoutX="99.0" layoutY="10.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="80.0" text="Button" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Attk1" prefHeight="80.0" prefWidth="80.0" text="Button" />
+                        <Button layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#Attk2" prefHeight="80.0" prefWidth="80.0" text="Button" />
                      </children>
                   </Pane>
                </center>
                <right>
-                  <Button mnemonicParsing="false" prefHeight="20.0" prefWidth="100.0" text="Button" BorderPane.alignment="CENTER">
+                  <Button mnemonicParsing="false" onAction="#Surrender" prefHeight="20.0" prefWidth="100.0" text="Button" BorderPane.alignment="CENTER">
                      <BorderPane.margin>
                         <Insets right="20.0" />
                      </BorderPane.margin>

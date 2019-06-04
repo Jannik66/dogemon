@@ -2,6 +2,12 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.text.Font;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 import gui.MainStage;
 
 public class Battle {
@@ -9,8 +15,7 @@ public class Battle {
 	@FXML
 	private Label PlayerHP;
 	@FXML
-	private Label PlayerName;
-	
+	private Label PlayerName;	
 	@FXML
 	private Label OpponentHP;
 	@FXML
@@ -18,8 +23,17 @@ public class Battle {
 	
 	private MainStage mainStage;
 	
-	public Battle(){
+	public Battle() {
 		
+		try {
+		final Font Pixelfont = Font.loadFont(new FileInputStream(new File("./Pixel-UniCode.ttf")),25);
+		PlayerHP.setFont(Pixelfont);
+		PlayerName.setFont(Pixelfont);
+		OpponentHP.setFont(Pixelfont);
+		OpponentName.setFont(Pixelfont);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	@FXML
