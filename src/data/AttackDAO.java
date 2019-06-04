@@ -15,7 +15,7 @@ import org.json.JSONObject;
 
 public class AttackDAO {
 
-	private ArrayList<AttackDTO> Monsters = new ArrayList<AttackDTO>();
+	private ArrayList<AttackDTO> Attacks = new ArrayList<AttackDTO>();
 
 	public AttackDAO() {
 		String contents;
@@ -31,7 +31,7 @@ public class AttackDAO {
 				int impact = arr.getJSONObject(i).getInt("impact");
 				String imagepath = arr.getJSONObject(i).getString("imagepath");
 				
-				Monsters.add(new AttackDTO(monster_id, name, targetmonster, impact, imagepath));
+				Attacks.add(new AttackDTO(monster_id, name, targetmonster, impact, imagepath));
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -39,7 +39,7 @@ public class AttackDAO {
 	}
 	
 	public ArrayList<AttackDTO> getAllAttacks() {
-		return Monsters;
+		return Attacks;
 	}
 	
 }

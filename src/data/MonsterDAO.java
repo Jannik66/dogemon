@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import dto.AttackDTO;
 import dto.MonsterDTO;
 
 import org.json.JSONArray;
@@ -15,12 +16,13 @@ import org.json.JSONObject;
 
 public class MonsterDAO {
 
-	private ArrayList<MonsterDTO> Monsters = new ArrayList<MonsterDTO>();
+	private static ArrayList<MonsterDTO> Monsters = new ArrayList<MonsterDTO>();
 
 	public MonsterDAO() {
 		String contents;
 		try {
-			contents = new String(Files.readAllBytes(Paths.get("./staticdata/monsterdata.json")), StandardCharsets.UTF_8);
+			contents = new String(Files.readAllBytes(Paths.get("./staticdata/monsterdata.json")),
+					StandardCharsets.UTF_8);
 			JSONObject obj = new JSONObject(contents);
 
 			JSONArray arr = obj.getJSONArray("monsters");
@@ -34,17 +36,20 @@ public class MonsterDAO {
 				String picturepath = arr.getJSONObject(i).getString("picturepath");
 				JSONArray attackidsarray = arr.getJSONObject(i).getJSONArray("attackids");
 				List<Integer> attackids = new ArrayList<Integer>();
-				
+
 				for (int a = 0; a < attackidsarray.length(); a++) {
 					attackids.add(attackidsarray.optInt(i));
 				}
-				
-				Monsters.add(new MonsterDTO(monster_id, name, hp, attackpower, defensepower, initiative, picturepath, attackids));
-				
-				System.out.println();
+
+				Monsters.add(new MonsterDTO(monster_id, name, hp, attackpower, defensepower, initiative, picturepath,
+						attackids));
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static ArrayList<MonsterDTO> getAllMonsters() {
+		return Monsters;
 	}
 }
