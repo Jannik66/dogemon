@@ -37,7 +37,7 @@ public class Battle {
 	@FXML
 	private void initialize(){
 		
-		PlayerName.setText("Lööpbröther");
+		PlayerName.setText(mainStage.getPlayer().getData().getName());
 		OpponentName.setText("Bösi McBöse");
 		
 	}

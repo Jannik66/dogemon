@@ -15,7 +15,7 @@
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select1" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select0" prefHeight="120.0" prefWidth="90.0" />
                   <Button layoutX="109.0" layoutY="22.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
                   <Button layoutX="205.0" layoutY="22.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
                   <Button layoutX="397.0" layoutY="22.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
