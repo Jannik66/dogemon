@@ -2,16 +2,23 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.text.Font;
+import logic.MenuLogic;
+import logic.Monster;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 import gui.MainStage;
 
 public class Selection {
 	
 	private MainStage mainStage;
+	
+	private MenuLogic menulogic = new MenuLogic();
+	
+	private ArrayList<Monster> Monsters;
 	
 	public Selection() {
 		
@@ -22,6 +29,7 @@ public class Selection {
 			e.printStackTrace();
 		}
 		
+		Monsters = menulogic.getAllMonsters();
 	}
 	
 	@FXML
