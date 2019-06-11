@@ -58,7 +58,7 @@ public class Battle {
 	
 	@FXML
 	private void Surrender() {
-		mainStage.showEndscreenGUI(mainStage.getPlayer());
+		mainStage.showEndscreenGUI(mainStage.getOpponent());
 	}
 	
 	
