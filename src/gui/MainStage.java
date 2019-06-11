@@ -39,6 +39,21 @@ public class MainStage extends Application {
 		}
 	}
 	
+    public void showSelectionGUI() {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainStage.class.getResource("Battle.fxml"));
+            AnchorPane BattleGUI = (AnchorPane) loader.load();
+            
+            rootLayout.setCenter(BattleGUI);
+            
+            Battle controller = loader.getController();
+            controller.setMainStage(this);
+           
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public void showBattleGUI() {
         try {
