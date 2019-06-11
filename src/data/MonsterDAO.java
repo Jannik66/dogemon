@@ -29,7 +29,7 @@ public class MonsterDAO {
 		}
 	}
 
-	public static ArrayList<MonsterDTO> getAllMonsters() {
+	public ArrayList<MonsterDTO> getAllMonsters() {
 
 		ArrayList<MonsterDTO> Monsters = new ArrayList<MonsterDTO>();
 
@@ -40,7 +40,8 @@ public class MonsterDAO {
 			int attackpower = arr.getJSONObject(i).getInt("attackpower");
 			int defensepower = arr.getJSONObject(i).getInt("defensepower");
 			int initiative = arr.getJSONObject(i).getInt("initiative");
-			String picturepath = arr.getJSONObject(i).getString("picturepath");
+			String picturefrontpath = arr.getJSONObject(i).getString("picturefrontpath");
+			String picturebackpath = arr.getJSONObject(i).getString("picturebackpath");
 			JSONArray attackidsarray = arr.getJSONObject(i).getJSONArray("attackids");
 			List<Integer> attackids = new ArrayList<Integer>();
 
@@ -48,8 +49,8 @@ public class MonsterDAO {
 				attackids.add(attackidsarray.optInt(i));
 			}
 
-			Monsters.add(new MonsterDTO(monster_id, name, hp, attackpower, defensepower, initiative, picturepath,
-					attackids));
+			Monsters.add(new MonsterDTO(monster_id, name, hp, attackpower, defensepower, initiative, picturefrontpath,
+					picturebackpath, attackids));
 		}
 		return Monsters;
 	}
