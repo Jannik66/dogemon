@@ -15,10 +15,10 @@ public class BattleLogic {
 	Monster playerMonster;
 	Monster opponentMonster;
 
-	public BattleLogic(int MonsterId, ArrayList<Monster> monsters) {
+	public BattleLogic(int PlayerMonsterId, ArrayList<Monster> monsters) {
 		createAttacks();
-		definePlayer(MonsterId, monsters);
-		defineOpponent();
+		definePlayer(PlayerMonsterId, monsters);
+		defineOpponent(PlayerMonsterId, monsters);
 		setAttacks();
 	}
 
@@ -41,13 +41,27 @@ public class BattleLogic {
 		}
 	}
 
-	private void defineOpponent() {
-		// TODO: define Opponent
+	private void defineOpponent(int PlayerMonsterId, ArrayList<Monster> monsters) {
+		int OpponentMonsterId = (int)Math.floor(Math.random() * monsters.size());
+		
+		for (Monster monster : monsters) {
+			if (monster.getData().getId() == OpponentMonsterId && monster.getData().getId() != PlayerMonsterId) {
+				this.opponentMonster = monster;
+			} else if (monster.getData().getId() == OpponentMonsterId) {
+				MonsterDAO MonsterDataAccessObject = new MonsterDAO();
+				ArrayList<MonsterDTO> MonsterDTOs = MonsterDataAccessObject.getAllMonsters();
+				for (MonsterDTO monsterDTO : MonsterDTOs) {
+					if (monsterDTO.getId() == OpponentMonsterId) {
+						this.opponentMonster = new Monster(monsterDTO);
+					}
+				}
+			}
+		}
 	}
 
 	private void setAttacks() {
 		playerMonster.setAttacks(Attacks);
-		// opponentMonster.setAttacks(Attacks);
+		opponentMonster.setAttacks(Attacks);
 	}
 
 	public Monster getPlayerMonster() {

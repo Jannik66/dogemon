@@ -2,14 +2,14 @@
     "monsters": [
         {
             "id": 0,
-            "name": "Faggotini",
+            "name": "ALLA",
             "hp": 100,
             "attackpower": 1,
             "defensepower": 50,
             "initiative": 3,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
-            "attackids": [ 1, 2 ]
+            "attackids": [ 0, 1 ]
         },
         {
             "id": 1,
