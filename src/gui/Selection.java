@@ -33,13 +33,66 @@ public class Selection {
 	}
 	
 	public void initMenu() {
-		
+		//show Pictures
 	}
 	
 	@FXML
 	private void Select0() {
-		System.out.println("I coose you!");
 		mainStage.initializeBattleLogic(0);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select1() {
+		mainStage.initializeBattleLogic(1);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select2() {
+		mainStage.initializeBattleLogic(2);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select3() {
+		mainStage.initializeBattleLogic(3);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select4() {
+		mainStage.initializeBattleLogic(4);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select5() {
+		mainStage.initializeBattleLogic(5);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select6() {
+		mainStage.initializeBattleLogic(6);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select7() {
+		mainStage.initializeBattleLogic(7);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select8() {
+		mainStage.initializeBattleLogic(8);
+		mainStage.showBattleGUI();
+	}
+	
+	@FXML
+	private void Select9() {
+		mainStage.initializeBattleLogic(9);
 		mainStage.showBattleGUI();
 	}
 	

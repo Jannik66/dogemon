@@ -81,6 +81,23 @@ public class MainStage extends Application {
         }
     }
     
+    public void showEndscreenGUI(Monster Winner) {
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(MainStage.class.getResource("Endscreen.fxml"));
+            AnchorPane EndGUI = (AnchorPane) loader.load();
+            
+            rootLayout.setCenter(EndGUI);
+            
+            Endscreen controller = loader.getController();
+            controller.setMainStage(this);
+            controller.initEndscreen(Winner);
+           
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
     public Stage getPrimaryStage() {
     	return primaryStage;
     }

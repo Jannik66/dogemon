@@ -1,8 +1,10 @@
+
 package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.text.Font;
+import logic.Monster;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,20 +12,14 @@ import java.io.FileNotFoundException;
 
 import gui.MainStage;
 
-public class Battle {
-
-	@FXML
-	private Label PlayerHP;
-	@FXML
-	private Label PlayerName;	
-	@FXML
-	private Label OpponentHP;
-	@FXML
-	private Label OpponentName;
+public class Endscreen {
 	
 	private MainStage mainStage;
 	
-	public Battle() {
+	@FXML
+	private Label WinnerName;
+	
+	public Endscreen() {
 		
 		try {
 				@SuppressWarnings("unused")
@@ -36,30 +32,20 @@ public class Battle {
 	
 	@FXML
 	private void initialize(){
-
 	}
 	
 	public void setMainStage(MainStage mainStage) {
 		this.mainStage = mainStage;
 	}
 	
-	public void initBattle() {
-		PlayerName.setText(mainStage.getPlayer().getData().getName());
-		//OpponentName.setText(mainStage.getOpponent().getData().getName());
+	public void initEndscreen(Monster Winner) {
+		
+		WinnerName.setText(Winner.getData().getName() + " wins!");
 	}
 	
 	@FXML
-	private void Attk1() {
+	private void PlayAgain() {
+		mainStage.showSelectionGUI();
 	}
-	
-	@FXML
-	private void Attk2() {
-	}
-	
-	@FXML
-	private void Surrender() {
-		mainStage.showEndscreenGUI(mainStage.getPlayer());
-	}
-	
 	
 }
