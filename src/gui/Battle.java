@@ -45,7 +45,7 @@ public class Battle {
 	
 	public void initBattle() {
 		PlayerName.setText(mainStage.getPlayer().getData().getName());
-		//OpponentName.setText(mainStage.getOpponent().getData().getName());
+		OpponentName.setText(mainStage.getOpponent().getData().getName());
 	}
 	
 	@FXML
