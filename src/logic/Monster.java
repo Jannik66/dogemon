@@ -9,9 +9,8 @@ public class Monster {
 	MonsterDTO data;
 	ArrayList<Attack> Attacks;
 
-	public Monster(MonsterDTO data, ArrayList<Attack> attacks) {
+	public Monster(MonsterDTO data) {
 		this.data = data;
-		setAttacks(attacks);
 	}
 
 	private void setAttacks(ArrayList<Attack> attacks) {

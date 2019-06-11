@@ -7,27 +7,30 @@
             "attackpower": 1,
             "defensepower": 50,
             "initiative": 3,
-            "picturepath": "pathewiofero",
+            "picturefrontpath": "ewrof3ufirhf",
+            "picturebackpath": "pathewiofero",
             "attackids": [ 1, 2 ]
         },
         {
             "id": 2,
-            "name": "Lööpbröther",
+            "name": "Bruh",
             "hp": 100,
             "attackpower": 1,
             "defensepower": 50,
             "initiative": 3,
-            "picturepath": "pathewiofero",
+            "picturefrontpath": "ewrof3ufirhf",
+            "picturebackpath": "pathewiofero",
             "attackids": [ 1, 2 ]
         },
         {
             "id": 3,
-            "name": "Lööpbröther",
+            "name": "Ble",
             "hp": 100,
             "attackpower": 1,
             "defensepower": 50,
             "initiative": 3,
-            "picturepath": "pathewiofero",
+            "picturefrontpath": "ewrof3ufirhf",
+            "picturebackpath": "pathewiofero",
             "attackids": [ 1, 2 ]
         }
         

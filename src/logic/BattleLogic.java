@@ -7,16 +7,16 @@ import data.MonsterDAO;
 import dto.AttackDTO;
 import dto.MonsterDTO;
 
-public class MainLogic {
+public class BattleLogic {
 
-	ArrayList<MonsterDTO> MonsterDTOs;
+	MenuLogic menulogic;
 	ArrayList<AttackDTO> AttackDTOs;
-	ArrayList<Monster> Monsters;
 	ArrayList<Attack> Attacks;
 
-	public void loadData() {
+	public BattleLogic(MenuLogic menulogic) {
+		this.menulogic = menulogic;
 		createAttacks();
-		createMonsters();
+		//setAttacks();
 	}
 
 	private void createAttacks() {
@@ -26,19 +26,10 @@ public class MainLogic {
 			Attacks.add(new Attack(attack));
 		}
 	}
-
-	private void createMonsters() {
-		ArrayList<MonsterDTO> MonsterDTOs = MonsterDAO.getAllMonsters();
-
-		for (MonsterDTO monster : MonsterDTOs) {
-			Monsters.add(new Monster(monster, Attacks));
-		}
-
-	}
-
-	public ArrayList<Monster> getAllMonsters() {
-		return Monsters;
-	}
+	
+	/*private void setAttacks() {
+		ArrayList<Monster> monsters = menulogic.getAllMonsters();
+	}*/
 
 	/*
 	 * public Monster getMonsterById() { Monster monster;
