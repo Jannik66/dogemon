@@ -26,18 +26,19 @@ public class Battle {
 	public Battle() {
 		
 		try {
-		final Font Pixelfont = Font.loadFont(new FileInputStream(new File("./Pixel-UniCode.ttf")),25);
-		PlayerHP.setFont(Pixelfont);
-		PlayerName.setFont(Pixelfont);
-		OpponentHP.setFont(Pixelfont);
-		OpponentName.setFont(Pixelfont);
-		} catch (FileNotFoundException e) {
+				@SuppressWarnings("unused")
+				final Font Pixelfont = Font.loadFont(new FileInputStream(new File("./src/gui/Pixel-UniCode.ttf")),25);
+			} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	@FXML
 	private void initialize(){
+		
+		PlayerName.setText("Lööpbröther");
+		OpponentName.setText("Bösi McBöse");
 		
 	}
 	
