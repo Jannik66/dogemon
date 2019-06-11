@@ -11,25 +11,46 @@ public class BattleLogic {
 
 	MenuLogic menulogic;
 	ArrayList<AttackDTO> AttackDTOs;
-	ArrayList<Attack> Attacks;
+	ArrayList<Attack> Attacks = new ArrayList<Attack>();
+	Monster playerMonster;
+	Monster opponentMonster;
 
-	public BattleLogic(MenuLogic menulogic) {
+	public BattleLogic(MenuLogic menulogic, Monster playerMonster) {
 		this.menulogic = menulogic;
+		this.playerMonster = playerMonster;
+		this.opponentMonster = opponentMonster;
 		createAttacks();
-		//setAttacks();
+		defineOpponent();
+		setAttacks();
 	}
 
 	private void createAttacks() {
-		ArrayList<AttackDTO> AttackDTOs = AttackDAO.getAllAttacks();
+
+		AttackDAO AttackDataAccessObject = new AttackDAO();
+
+		AttackDTOs = AttackDataAccessObject.getAllAttacks();
 
 		for (AttackDTO attack : AttackDTOs) {
 			Attacks.add(new Attack(attack));
 		}
 	}
 	
-	/*private void setAttacks() {
-		ArrayList<Monster> monsters = menulogic.getAllMonsters();
-	}*/
+	private void defineOpponent() {
+		// TODO: define Opponent
+	}
+
+	private void setAttacks() {
+		playerMonster.setAttacks(Attacks);
+		//opponentMonster.setAttacks(Attacks);
+	}
+
+	public Monster getPlayerMonster() {
+		return playerMonster;
+	}
+
+	public Monster getOpponentMonster() {
+		return opponentMonster;
+	}
 
 	/*
 	 * public Monster getMonsterById() { Monster monster;

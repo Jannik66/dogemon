@@ -27,21 +27,20 @@ public class AttackDAO {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
+	}	
 
-	public static ArrayList<AttackDTO> getAllAttacks() {
+	public ArrayList<AttackDTO> getAllAttacks() {
 		ArrayList<AttackDTO> AttackDTOs = new ArrayList<AttackDTO>();
-
 		for (int i = 0; i < arr.length(); i++) {
 			int monster_id = arr.getJSONObject(i).getInt("id");
 			String name = arr.getJSONObject(i).getString("name");
-			int targetmonster = arr.getJSONObject(i).getInt("targetmonster");
+			String targetmonster = arr.getJSONObject(i).getString("targetmonster");
 			int impact = arr.getJSONObject(i).getInt("impact");
 			String imagepath = arr.getJSONObject(i).getString("imagepath");
 
 			AttackDTOs.add(new AttackDTO(monster_id, name, targetmonster, impact, imagepath));
 		}
-
+		
 		return AttackDTOs;
 	}
 

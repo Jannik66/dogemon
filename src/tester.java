@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 
+import logic.BattleLogic;
 import logic.MenuLogic;
 import logic.Monster;
 
@@ -13,5 +14,11 @@ public class tester {
 		for (Monster monster : Monsters) {
 			System.out.println(monster.getData().getName());
 		}
+		
+		BattleLogic battlelogic = new BattleLogic(menulogic, Monsters.get(0));
+		
+		Monster player = battlelogic.getPlayerMonster();
+		
+		System.out.println(player.getAttacks().get(0).getData().getName());
 	}
 }

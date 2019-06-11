@@ -3,11 +3,11 @@ package dto;
 public class AttackDTO {
 	private int id;
 	private String name;
-	private int targetmonster;
+	private String targetmonster;
 	private int impact;
 	private String imagepath;
 
-	public AttackDTO(int id, String name, int targetmonster, int impact, String imagepath) {
+	public AttackDTO(int id, String name, String targetmonster, int impact, String imagepath) {
 		this.id = id;
 		this.name = name;
 		this.targetmonster = targetmonster;
@@ -23,7 +23,7 @@ public class AttackDTO {
 		return name;
 	}
 
-	public int getTargetmonster() {
+	public String getTargetmonster() {
 		return targetmonster;
 	}
 

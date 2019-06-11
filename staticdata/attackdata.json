@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "name": "Nieser",
+            "name": "Fallrückzieher",
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 12,
@@ -18,7 +18,7 @@
         },
         {
             "id": 3,
-            "name": "Nieser",
+            "name": "BigChungusDrop",
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 12,
