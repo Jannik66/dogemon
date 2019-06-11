@@ -9,17 +9,16 @@ import dto.MonsterDTO;
 
 public class BattleLogic {
 
-	MenuLogic menulogic;
 	ArrayList<AttackDTO> AttackDTOs;
 	ArrayList<Attack> Attacks = new ArrayList<Attack>();
 	Monster playerMonster;
 	Monster opponentMonster;
 
-	public BattleLogic(MenuLogic menulogic, Monster playerMonster) {
-		this.menulogic = menulogic;
+	public BattleLogic(int MonsterId) {
 		this.playerMonster = playerMonster;
 		this.opponentMonster = opponentMonster;
 		createAttacks();
+		definePlayer();
 		defineOpponent();
 		setAttacks();
 	}
@@ -33,6 +32,10 @@ public class BattleLogic {
 		for (AttackDTO attack : AttackDTOs) {
 			Attacks.add(new Attack(attack));
 		}
+	}
+	
+	private void definePlayer() {
+		
 	}
 	
 	private void defineOpponent() {

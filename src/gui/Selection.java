@@ -2,7 +2,6 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.text.Font;
-import logic.MenuLogic;
 import logic.Monster;
 
 import java.io.File;
@@ -16,10 +15,6 @@ public class Selection {
 	
 	private MainStage mainStage;
 	
-	private MenuLogic menulogic = new MenuLogic();
-	
-	private ArrayList<Monster> Monsters;
-	
 	public Selection() {
 		
 		try {
@@ -29,11 +24,13 @@ public class Selection {
 			e.printStackTrace();
 		}
 		
-		Monsters = menulogic.getAllMonsters();
 	}
 	
 	@FXML
 	private void initialize(){
+		ArrayList<Monster> Monsters = mainStage.getAllMonsters();
+		// TODO: Set pictures
+		
 		
 	}
 	
@@ -42,8 +39,9 @@ public class Selection {
 	}
 	
 	@FXML
-	private void Select1() {
+	private void Select0() {
 		System.out.println("I coose you!");
+		mainStage.initializeBattleLogic(0);
 		mainStage.showBattleGUI();
 	}
 	

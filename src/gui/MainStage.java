@@ -1,6 +1,7 @@
 package gui;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import gui.Battle;
 import javafx.application.Application;
@@ -9,14 +10,22 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import logic.BattleLogic;
+import logic.MenuLogic;
+import logic.Monster;
 
 public class MainStage extends Application {
 
 	private Stage primaryStage;
 	private BorderPane rootLayout;
 	
+	private MenuLogic menulogic = new MenuLogic();
+	
+	private BattleLogic battlelogic;
+	
 	@Override
 	public void start(Stage primaryStage) {
+		
 		this.primaryStage = primaryStage;
 		this.primaryStage.setTitle("Dogémon Lapislazuli Edition");
 		
@@ -73,6 +82,22 @@ public class MainStage extends Application {
     
     public Stage getPrimaryStage() {
     	return primaryStage;
+    }
+    
+    public void initializeBattleLogic(int MonsterId) {
+    	battlelogic = new BattleLogic(MonsterId);
+    }
+    
+    public ArrayList<Monster> getAllMonsters() {
+    	return menulogic.getAllMonsters();
+    }
+    
+    public Monster getPlayer() {
+    	return battlelogic.getPlayerMonster();
+    }
+    
+    public Monster getOpponent() {
+    	return battlelogic.getOpponentMonster();
     }
     
     public static void main(String[] args) {
