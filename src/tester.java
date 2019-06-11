@@ -15,7 +15,7 @@ public class tester {
 			System.out.println(monster.getData().getName());
 		}
 		
-		BattleLogic battlelogic = new BattleLogic(0);
+		BattleLogic battlelogic = new BattleLogic(0, Monsters);
 		
 		Monster player = battlelogic.getPlayerMonster();
 		

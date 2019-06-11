@@ -1,6 +1,7 @@
 package logic;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import data.AttackDAO;
 import data.MonsterDAO;
@@ -14,11 +15,9 @@ public class BattleLogic {
 	Monster playerMonster;
 	Monster opponentMonster;
 
-	public BattleLogic(int MonsterId) {
-		this.playerMonster = playerMonster;
-		this.opponentMonster = opponentMonster;
+	public BattleLogic(int MonsterId, ArrayList<Monster> monsters) {
 		createAttacks();
-		definePlayer();
+		definePlayer(MonsterId, monsters);
 		defineOpponent();
 		setAttacks();
 	}
@@ -33,18 +32,22 @@ public class BattleLogic {
 			Attacks.add(new Attack(attack));
 		}
 	}
-	
-	private void definePlayer() {
-		
+
+	private void definePlayer(int MonsterId, ArrayList<Monster> monsters) {
+		for (Monster monster : monsters) {
+			if (monster.getData().getId() == MonsterId) {
+				this.playerMonster = monster;
+			}
+		}
 	}
-	
+
 	private void defineOpponent() {
 		// TODO: define Opponent
 	}
 
 	private void setAttacks() {
 		playerMonster.setAttacks(Attacks);
-		//opponentMonster.setAttacks(Attacks);
+		// opponentMonster.setAttacks(Attacks);
 	}
 
 	public Monster getPlayerMonster() {

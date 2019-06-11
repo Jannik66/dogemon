@@ -85,7 +85,7 @@ public class MainStage extends Application {
     }
     
     public void initializeBattleLogic(int MonsterId) {
-    	battlelogic = new BattleLogic(MonsterId);
+    	battlelogic = new BattleLogic(MonsterId, menulogic.getAllMonsters());
     }
     
     public ArrayList<Monster> getAllMonsters() {

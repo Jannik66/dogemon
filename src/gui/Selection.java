@@ -28,14 +28,11 @@ public class Selection {
 	
 	@FXML
 	private void initialize(){
-		ArrayList<Monster> Monsters = mainStage.getAllMonsters();
-		// TODO: Set pictures
-		
-		
 	}
 	
 	public void setMainStage(MainStage mainStage) {
 		this.mainStage = mainStage;
+		// TODO: Set Pictures
 	}
 	
 	@FXML

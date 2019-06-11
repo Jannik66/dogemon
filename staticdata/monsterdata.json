@@ -1,8 +1,8 @@
 {
     "monsters": [
         {
-            "id": 1,
-            "name": "Lööpbröther",
+            "id": 0,
+            "name": "Faggotini",
             "hp": 100,
             "attackpower": 1,
             "defensepower": 50,
@@ -12,7 +12,7 @@
             "attackids": [ 1, 2 ]
         },
         {
-            "id": 2,
+            "id": 1,
             "name": "Bruh",
             "hp": 100,
             "attackpower": 1,
@@ -23,7 +23,7 @@
             "attackids": [ 1, 2 ]
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "Ble",
             "hp": 100,
             "attackpower": 1,

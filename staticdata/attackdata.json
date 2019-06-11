@@ -1,7 +1,7 @@
 {
     "attacks": [
         {
-            "id": 1,
+            "id": 0,
             "name": "Nieser",
             "targetmonster": "player",
             "targetstat": "hp",
@@ -9,7 +9,7 @@
             "imagepath": "patheiofo/to/image.png"
         },
         {
-            "id": 2,
+            "id": 1,
             "name": "Fallrückzieher",
             "targetmonster": "opponent",
             "targetstat": "hp",
@@ -17,7 +17,7 @@
             "imagepath": "patheiofo/to/image.png"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "BigChungusDrop",
             "targetmonster": "opponent",
             "targetstat": "hp",
