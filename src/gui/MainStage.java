@@ -74,6 +74,7 @@ public class MainStage extends Application {
             
             Battle controller = loader.getController();
             controller.setMainStage(this);
+            controller.initBattle();
            
         } catch (IOException e) {
             e.printStackTrace();

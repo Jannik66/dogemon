@@ -36,12 +36,16 @@ public class Battle {
 	
 	@FXML
 	private void initialize(){
-		OpponentName.setText("Bösi McBöse");
+
 	}
 	
 	public void setMainStage(MainStage mainStage) {
 		this.mainStage = mainStage;
+	}
+	
+	public void initBattle() {
 		PlayerName.setText(mainStage.getPlayer().getData().getName());
+		//OpponentName.setText(mainStage.getOpponent().getData().getName());
 	}
 	
 	@FXML

@@ -2,12 +2,10 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.text.Font;
-import logic.Monster;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 
 import gui.MainStage;
 
@@ -32,7 +30,10 @@ public class Selection {
 	
 	public void setMainStage(MainStage mainStage) {
 		this.mainStage = mainStage;
-		// TODO: Set Pictures
+	}
+	
+	public void initMenu() {
+		
 	}
 	
 	@FXML
