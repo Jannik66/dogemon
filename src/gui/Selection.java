@@ -39,22 +39,4 @@ public class Selection {
 		mainStage.showBattleGUI();
 	}
 	
-	@FXML
-	private void Select2() {
-		System.out.println("I coose you!");
-		mainStage.showBattleGUI();
-	}
-	
-	@FXML
-	private void Select3() {
-		System.out.println("I coose you!");
-		mainStage.showBattleGUI();
-	}
-	
-	@FXML
-	private void Select4() {
-		System.out.println("I coose you!");
-		mainStage.showBattleGUI();
-	}
-	
 }

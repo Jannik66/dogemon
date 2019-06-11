@@ -59,7 +59,7 @@ public class Battle {
 	@FXML
 	private void Surrender() {
 		System.out.println("Runs away");
-		mainStage.showBattleGUI();
+		mainStage.showSelectionGUI();
 	}
 	
 	

@@ -22,7 +22,7 @@ public class MainStage extends Application {
 		
 		initRootLayout();
 		
-		showBattleGUI();
+		showSelectionGUI();
 	}
 	
 	public void initRootLayout(){
@@ -42,12 +42,12 @@ public class MainStage extends Application {
     public void showSelectionGUI() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainStage.class.getResource("Battle.fxml"));
-            AnchorPane BattleGUI = (AnchorPane) loader.load();
+            loader.setLocation(MainStage.class.getResource("Selection.fxml"));
+            AnchorPane SelectionGUI = (AnchorPane) loader.load();
             
-            rootLayout.setCenter(BattleGUI);
+            rootLayout.setCenter(SelectionGUI);
             
-            Battle controller = loader.getController();
+            Selection controller = loader.getController();
             controller.setMainStage(this);
            
         } catch (IOException e) {

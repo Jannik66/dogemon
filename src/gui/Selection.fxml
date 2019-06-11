@@ -1,8 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="gui.Selection">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="500.0">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select1" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="109.0" layoutY="22.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="205.0" layoutY="22.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="397.0" layoutY="22.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="301.0" layoutY="22.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="13.0" layoutY="166.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="109.0" layoutY="166.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="205.0" layoutY="166.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="397.0" layoutY="166.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Button layoutX="301.0" layoutY="166.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="90.0" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="121.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Pixel UniCode Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Label text="Choose your Fighter:" BorderPane.alignment="CENTER_LEFT">
+               <BorderPane.margin>
+                  <Insets left="20.0" top="20.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="Pixel UniCode Regular" size="25.0" />
+               </font>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
 </AnchorPane>
-
