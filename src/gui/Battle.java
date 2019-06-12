@@ -50,10 +50,14 @@ public class Battle {
 	
 	@FXML
 	private void Attk1() {
+		// Attack with index 0
+		mainStage.Attack(0);
 	}
 	
 	@FXML
 	private void Attk2() {
+		// Attack with index 1
+		mainStage.Attack(1);
 	}
 	
 	@FXML

@@ -46,7 +46,7 @@ public class MonsterDAO {
 			List<Integer> attackids = new ArrayList<Integer>();
 
 			for (int a = 0; a < attackidsarray.length(); a++) {
-				attackids.add(attackidsarray.optInt(i));
+				attackids.add((int)attackidsarray.get(a));
 			}
 
 			Monsters.add(new MonsterDTO(monster_id, name, hp, attackpower, defensepower, initiative, picturefrontpath,

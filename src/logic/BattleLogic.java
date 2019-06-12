@@ -1,7 +1,6 @@
 package logic;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import data.AttackDAO;
 import data.MonsterDAO;
@@ -70,6 +69,43 @@ public class BattleLogic {
 
 	public Monster getOpponentMonster() {
 		return opponentMonster;
+	}
+	
+	public void Attack(int attkNr) {
+		Attack playerAttack = playerMonster.getAttacks().get(attkNr);
+		Attack opponentAttack = evaluateOpponentAttack();
+		executeRound(playerAttack, opponentAttack);
+	}
+	
+	private Attack evaluateOpponentAttack() {
+		int attkId = (int)Math.floor(Math.random() * 2);
+		System.out.println(attkId);
+		Attack opponentAttack = opponentMonster.getAttacks().get(attkId);
+		return opponentAttack;
+	}
+	
+	private void executeRound(Attack playerAttack, Attack opponentAttack) {
+		if (playerMonster.getData().getInitiative() > opponentMonster.getData().getInitiative()) {
+			executeAttack(playerAttack, true);
+			executeAttack(opponentAttack, false);
+		} else if (playerMonster.getData().getInitiative() > opponentMonster.getData().getInitiative()) {
+			executeAttack(opponentAttack, false);
+			executeAttack(playerAttack, true);
+		} else {
+			// If the Monsters have the same initiative, a random Monster will be picked
+			int initiative = (int)Math.floor(Math.random() * 2);
+			if (initiative == 0) {
+				executeAttack(playerAttack, true);
+				executeAttack(opponentAttack, false);
+			} else {
+				executeAttack(opponentAttack, false);
+				executeAttack(playerAttack, true);
+			}
+		}
+	}
+	
+	private void executeAttack(Attack attack, boolean isPlayer) {
+		
 	}
 
 	/*
