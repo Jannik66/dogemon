@@ -1,17 +1,49 @@
 package gui;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.text.Font;
+import logic.Monster;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 
 import gui.MainStage;
 
 public class Selection {
 	
+	@FXML
+	private Label InfoName;
+	
+	@FXML
+	private Label InfoHP;
+	
+	@FXML
+	private Label InfoAttk;
+	
+	@FXML
+	private Label InfoDef;
+	
+	@FXML
+	private Label InfoInit;
+	
+	@FXML
+	private Label InfoAttack1;
+	
+	@FXML
+	private Label DescAttack1;
+	
+	@FXML
+	private Label InfoAttack2;
+	
+	@FXML
+	private Label DescAttack2;
+		
 	private MainStage mainStage;
+	
+	private ArrayList<Monster> Monsters;
 	
 	public Selection() {
 		
@@ -30,10 +62,11 @@ public class Selection {
 	
 	public void setMainStage(MainStage mainStage) {
 		this.mainStage = mainStage;
+		Monsters = mainStage.getAllMonsters();
 	}
 	
 	public void initMenu() {
-		//show Pictures
+		NoInfo();
 	}
 	
 	@FXML
@@ -90,10 +123,143 @@ public class Selection {
 		mainStage.showBattleGUI();
 	}
 	
+	
 	@FXML
-	private void Select9() {
-		mainStage.initializeBattleLogic(9);
-		mainStage.showBattleGUI();
+	private void Info0() {
+		int x = 0;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
 	}
 	
+	@FXML
+	private void Info1() {
+		int x = 1;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void Info2() {
+		int x = 2;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void Info3() {
+		int x = 3;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void Info4() {
+		int x = 4;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void Info5() {
+		int x = 5;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void Info6() {
+		int x = 6;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void Info7() {
+		int x = 7;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void Info8() {
+		int x = 8;
+		InfoName.setText(Monsters.get(x).getData().getName());
+		InfoHP.setText(Monsters.get(x).getData().getMaxHp()+"");
+		InfoAttk.setText(Monsters.get(x).getData().getAttackpower()+"");
+		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
+		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
+		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
+		DescAttack2.setText("Does something else");
+	}
+	
+	@FXML
+	private void NoInfo() {
+		InfoName.setText("Info");
+		InfoHP.setText("0");
+		InfoAttk.setText("0");
+		InfoDef.setText("0");
+		InfoInit.setText("0");
+		InfoAttack1.setText("Attack 1");
+		DescAttack1.setText("Does something");
+		InfoAttack2.setText("Attack 2");
+		DescAttack2.setText("Does something else");
+	}
 }

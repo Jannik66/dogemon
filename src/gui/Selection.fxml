@@ -8,27 +8,21 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Selection">
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Selection">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="500.0">
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select0" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="109.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select1" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="205.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select2" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="397.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select4" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="301.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select3" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="13.0" layoutY="166.0" mnemonicParsing="false" onAction="#Select5" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="109.0" layoutY="166.0" mnemonicParsing="false" onAction="#Select6" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="205.0" layoutY="166.0" mnemonicParsing="false" onAction="#Select7" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="397.0" layoutY="166.0" mnemonicParsing="false" onAction="#Select9" prefHeight="120.0" prefWidth="90.0" />
-                  <Button layoutX="301.0" layoutY="166.0" mnemonicParsing="false" onAction="#Select8" prefHeight="120.0" prefWidth="90.0" />
-                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="121.0" textAlignment="CENTER">
-                     <font>
-                        <Font name="Pixel UniCode Regular" size="20.0" />
-                     </font>
-                  </Label>
+                  <Button layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select0" onMouseEntered="#Info0" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="109.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select1" onMouseEntered="#Info1" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="205.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select2" onMouseEntered="#Info2" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="13.0" layoutY="121.0" mnemonicParsing="false" onAction="#Select3" onMouseEntered="#Info3" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="109.0" layoutY="121.0" mnemonicParsing="false" onAction="#Select4" onMouseEntered="#Info4" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="205.0" layoutY="121.0" mnemonicParsing="false" onAction="#Select5" onMouseEntered="#Info5" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="13.0" layoutY="221.0" mnemonicParsing="false" onAction="#Select6" onMouseEntered="#Info6" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="109.0" layoutY="221.0" mnemonicParsing="false" onAction="#Select7" onMouseEntered="#Info7" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <Button layoutX="205.0" layoutY="221.0" mnemonicParsing="false" onAction="#Select8" onMouseEntered="#Info8" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
                </children>
             </Pane>
          </center>
@@ -42,6 +36,82 @@
                </font>
             </Label>
          </top>
+         <right>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <Label fx:id="InfoName" text="Info" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Pixel UniCode Regular" size="25.0" />
+                     </font></Label>
+               </top>
+               <center>
+                  <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Health:">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="39.0" text="Power:">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="66.0" text="Defence:">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="94.0" text="Initiative:">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="InfoHP" layoutX="98.0" layoutY="14.0" text="0">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="InfoAttk" layoutX="98.0" layoutY="39.0" text="0">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="InfoDef" layoutX="98.0" layoutY="66.0" text="0">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="InfoInit" layoutX="98.0" layoutY="94.0" text="0">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="InfoAttack1" layoutX="14.0" layoutY="140.0" text="Attack 1">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DescAttack1" alignment="TOP_LEFT" layoutX="14.0" layoutY="168.0" prefHeight="30.0" prefWidth="170.0" text="Does something">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="InfoAttack2" layoutX="13.0" layoutY="215.0" text="Attack 2">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="DescAttack2" alignment="TOP_LEFT" layoutX="13.0" layoutY="243.0" prefHeight="30.0" prefWidth="170.0" text="Does something else">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </center>
+            </BorderPane>
+         </right>
       </BorderPane>
    </children>
 </AnchorPane>

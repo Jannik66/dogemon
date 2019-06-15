@@ -19,6 +19,7 @@ public class MonsterDTO {
 		this.id = id;
 		this.name = name;
 		this.hp = hp;
+		this.maxHp = maxHp;
 		this.attackpower = attackpower;
 		this.defensepower = defensepower;
 		this.initiative = initiative;
