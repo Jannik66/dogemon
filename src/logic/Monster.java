@@ -30,5 +30,40 @@ public class Monster {
 	public MonsterDTO getData() {
 		return data;
 	}
+	
+	public int getSpecificStat(String stat) {
+		switch(stat) {
+		case "hp":
+			return data.getHp();
+		case "attackpower":
+			return data.getAttackpower();
+		case "defensepower":
+			return data.getDefensepower();
+		case "initiative":
+			return data.getInitiative();
+		default:
+			System.out.println("Error in getSpecificStat of Monster. There is no Stat called " + stat + ".");
+			return 0;
+		}
+	}
+	
+	public void setSpecificStat(String stat, int value) {
+		switch(stat) {
+		case "hp":
+			data.setHp(value);
+			break;
+		case "attackpower":
+			data.setAttackpower(value);
+			break;
+		case "defensepower":
+			data.setDefensepower(value);
+			break;
+		case "initiative":
+			data.setInitiative(value);
+		default:
+			System.out.println("Error in setSpecificStat of Monster. There is no Stat called " + stat + ".");
+			break;
+		}
+	}
 
 }

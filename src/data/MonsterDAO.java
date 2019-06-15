@@ -49,7 +49,7 @@ public class MonsterDAO {
 				attackids.add((int)attackidsarray.get(a));
 			}
 
-			Monsters.add(new MonsterDTO(monster_id, name, hp, attackpower, defensepower, initiative, picturefrontpath,
+			Monsters.add(new MonsterDTO(monster_id, name, hp, hp, attackpower, defensepower, initiative, picturefrontpath,
 					picturebackpath, attackids));
 		}
 		return Monsters;

@@ -6,6 +6,7 @@ public class MonsterDTO {
 	private int id;
 	private String name;
 	private int hp;
+	private int maxHp;
 	private int attackpower;
 	private int defensepower;
 	private int initiative;
@@ -13,7 +14,7 @@ public class MonsterDTO {
 	private String picturebackpath;
 	private List<Integer> attackids;
 
-	public MonsterDTO(int id, String name, int hp, int attackpower, int defensepower, int initiative,
+	public MonsterDTO(int id, String name, int hp, int maxHp, int attackpower, int defensepower, int initiative,
 			String picturefrontpath, String picturebackpath, List<Integer> attackids2) {
 		this.id = id;
 		this.name = name;
@@ -32,6 +33,10 @@ public class MonsterDTO {
 
 	public void setHp(int hp) {
 		this.hp = hp;
+	}
+	
+	public int getMaxHp() {
+		return maxHp;
 	}
 
 	public int getAttackpower() {

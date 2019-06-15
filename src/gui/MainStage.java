@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import logic.BattleLogic;
 import logic.MenuLogic;
 import logic.Monster;
+import logic.Attack;
 
 public class MainStage extends Application {
 
@@ -103,7 +104,7 @@ public class MainStage extends Application {
     }
     
     public void initializeBattleLogic(int MonsterId) {
-    	battlelogic = new BattleLogic(MonsterId, menulogic.getAllMonsters());
+    	battlelogic = new BattleLogic(MonsterId, menulogic.getAllMonsters(), menulogic.getAllAttacks());
     }
     
     public void Attack(int attkNr) {
@@ -112,6 +113,10 @@ public class MainStage extends Application {
     
     public ArrayList<Monster> getAllMonsters() {
     	return menulogic.getAllMonsters();
+    }
+    
+    public ArrayList<Attack> getAllAttacks() {
+    	return menulogic.getAllAttacks();
     }
     
     public Monster getPlayer() {

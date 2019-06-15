@@ -3,9 +3,9 @@
         {
             "id": 0,
             "name": "Nieser",
-            "targetmonster": "player",
+            "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 12,
+            "impact": 4,
             "imagepath": "patheiofo/to/image.png"
         },
         {
@@ -13,7 +13,7 @@
             "name": "Fallrückzieher",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 12,
+            "impact": 4,
             "imagepath": "patheiofo/to/image.png"
         },
         {
