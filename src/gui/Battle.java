@@ -2,6 +2,7 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.text.Font;
 
 import java.io.File;
@@ -21,7 +22,17 @@ public class Battle {
 	@FXML
 	private Label OpponentName;
 	
+	@FXML
+	private Image ImagePlayer;
+	@FXML
+	private Image ImageOpponent;
+	@FXML
+	private Image ImageAttack1;
+	@FXML
+	private Image ImageAttack2;
+	
 	private MainStage mainStage;
+
 	
 	public Battle() {
 		

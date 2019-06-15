@@ -16,28 +16,20 @@ public class Selection {
 	
 	@FXML
 	private Label InfoName;
-	
 	@FXML
 	private Label InfoHP;
-	
 	@FXML
 	private Label InfoAttk;
-	
 	@FXML
 	private Label InfoDef;
-	
 	@FXML
 	private Label InfoInit;
-	
 	@FXML
 	private Label InfoAttack1;
-	
 	@FXML
 	private Label DescAttack1;
-	
 	@FXML
-	private Label InfoAttack2;
-	
+	private Label InfoAttack2;	
 	@FXML
 	private Label DescAttack2;
 		

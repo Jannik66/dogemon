@@ -9,15 +9,15 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Battle">
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Battle">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
             <BorderPane prefHeight="200.0" prefWidth="280.0" BorderPane.alignment="CENTER">
                <bottom>
-                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <BorderPane prefHeight="300.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <center>
-                        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                        <Pane prefHeight="200.0" prefWidth="280.0" BorderPane.alignment="CENTER" />
                      </center>
                      <bottom>
                         <BorderPane maxHeight="60.0" maxWidth="200.0" prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER_LEFT">
@@ -52,7 +52,7 @@
          <right>
             <BorderPane prefHeight="200.0" prefWidth="220.0" BorderPane.alignment="CENTER">
                <top>
-                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <BorderPane prefHeight="300.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                      <center>
                         <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
                      </center>
@@ -91,8 +91,8 @@
                <center>
                   <Pane prefHeight="100.0" prefWidth="500.0" BorderPane.alignment="CENTER">
                      <children>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Attk1" prefHeight="80.0" prefWidth="80.0" text="Button" />
-                        <Button layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#Attk2" prefHeight="80.0" prefWidth="80.0" text="Button" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Attk1" prefHeight="80.0" prefWidth="80.0" />
+                        <Button layoutX="99.0" layoutY="10.0" mnemonicParsing="false" onAction="#Attk2" prefHeight="80.0" prefWidth="80.0" />
                      </children>
                   </Pane>
                </center>
