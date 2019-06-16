@@ -27,11 +27,7 @@ public class Selection {
 	@FXML
 	private Label InfoAttack1;
 	@FXML
-	private Label DescAttack1;
-	@FXML
 	private Label InfoAttack2;	
-	@FXML
-	private Label DescAttack2;
 		
 	private MainStage mainStage;
 	
@@ -125,9 +121,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -139,9 +133,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -153,9 +145,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -167,9 +157,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -181,9 +169,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -195,9 +181,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -209,9 +193,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -223,9 +205,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -237,9 +217,7 @@ public class Selection {
 		InfoDef.setText(Monsters.get(x).getData().getDefensepower()+"");
 		InfoInit.setText(Monsters.get(x).getData().getInitiative()+"");
 		InfoAttack1.setText(Monsters.get(x).getAttacks().get(0).getData().getName());
-		DescAttack1.setText("Does something");
 		InfoAttack2.setText(Monsters.get(x).getAttacks().get(1).getData().getName());
-		DescAttack2.setText("Does something else");
 	}
 	
 	@FXML
@@ -249,9 +227,7 @@ public class Selection {
 		InfoAttk.setText("0");
 		InfoDef.setText("0");
 		InfoInit.setText("0");
-		InfoAttack1.setText("Attack 1");
-		DescAttack1.setText("Does something");
-		InfoAttack2.setText("Attack 2");
-		DescAttack2.setText("Does something else");
+		InfoAttack1.setText("");
+		InfoAttack2.setText("");
 	}
 }

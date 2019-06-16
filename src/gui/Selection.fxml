@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
@@ -14,15 +14,15 @@
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="13.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select0" onMouseEntered="#Info0" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="109.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select1" onMouseEntered="#Info1" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="205.0" layoutY="22.0" mnemonicParsing="false" onAction="#Select2" onMouseEntered="#Info2" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="13.0" layoutY="121.0" mnemonicParsing="false" onAction="#Select3" onMouseEntered="#Info3" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="109.0" layoutY="121.0" mnemonicParsing="false" onAction="#Select4" onMouseEntered="#Info4" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="205.0" layoutY="121.0" mnemonicParsing="false" onAction="#Select5" onMouseEntered="#Info5" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="13.0" layoutY="221.0" mnemonicParsing="false" onAction="#Select6" onMouseEntered="#Info6" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="109.0" layoutY="221.0" mnemonicParsing="false" onAction="#Select7" onMouseEntered="#Info7" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
-                  <Button layoutX="205.0" layoutY="221.0" mnemonicParsing="false" onAction="#Select8" onMouseEntered="#Info8" onMouseExited="#NoInfo" prefHeight="90.0" prefWidth="90.0" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Select0" onMouseEntered="#Info0" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="10.0" onMouseClicked="#Select1" onMouseEntered="#Info1" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="10.0" onMouseClicked="#Select2" onMouseEntered="#Info2" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="105.0" onMouseClicked="#Select3" onMouseEntered="#Info3" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="105.0" onMouseClicked="#Select4" onMouseEntered="#Info4" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="105.0" onMouseClicked="#Select5" onMouseEntered="#Info5" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="200.0" onMouseClicked="#Select6" onMouseEntered="#Info6" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="200.0" onMouseClicked="#Select7" onMouseEntered="#Info7" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="200.0" onMouseClicked="#Select8" onMouseEntered="#Info8" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
                </children>
             </Pane>
          </center>
@@ -87,22 +87,17 @@
                               <Font name="Pixel UniCode Regular" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="InfoAttack1" layoutX="14.0" layoutY="140.0" text="Attack 1">
+                        <Label fx:id="InfoAttack1" layoutX="14.0" layoutY="175.0" text=" ">
                            <font>
                               <Font name="Pixel UniCode Regular" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="DescAttack1" alignment="TOP_LEFT" layoutX="14.0" layoutY="168.0" prefHeight="30.0" prefWidth="170.0" text="Does something">
+                        <Label fx:id="InfoAttack2" layoutX="13.0" layoutY="208.0" text=" ">
                            <font>
                               <Font name="Pixel UniCode Regular" size="24.0" />
                            </font>
                         </Label>
-                        <Label fx:id="InfoAttack2" layoutX="13.0" layoutY="215.0" text="Attack 2">
-                           <font>
-                              <Font name="Pixel UniCode Regular" size="24.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="DescAttack2" alignment="TOP_LEFT" layoutX="13.0" layoutY="243.0" prefHeight="30.0" prefWidth="170.0" text="Does something else">
+                        <Label layoutX="15.0" layoutY="142.0" text="Attacks:">
                            <font>
                               <Font name="Pixel UniCode Regular" size="24.0" />
                            </font>
