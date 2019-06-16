@@ -62,38 +62,34 @@ public class BattleLogic {
 		if (playerMonster.getData().getInitiative() > opponentMonster.getData().getInitiative()) {
 			output += executeAttack(playerAttack, true);
 			output += "\n";
-			output += "----------";
+			output += "--------------------";
 			output += "\n";
 			output += executeAttack(opponentAttack, false);
 			output += "\n";
-			output += "==========";
 		} else if (playerMonster.getData().getInitiative() > opponentMonster.getData().getInitiative()) {
 			output += executeAttack(opponentAttack, false);
 			output += "\n";
-			output += "----------";
+			output += "--------------------";
 			output += "\n";
 			output += executeAttack(playerAttack, true);
 			output += "\n";
-			output += "==========";
 		} else {
 			// If the Monsters have the same initiative, a random Monster will be picked
 			int initiative = (int) Math.floor(Math.random() * 2);
 			if (initiative == 0) {
 				output += executeAttack(playerAttack, true);
 				output += "\n";
-				output += "----------";
+				output += "--------------------";
 				output += "\n";
 				output += executeAttack(opponentAttack, false);
 				output += "\n";
-				output += "==========";
 			} else {
 				output += executeAttack(opponentAttack, false);
 				output += "\n";
-				output += "----------";
+				output += "--------------------";
 				output += "\n";
 				output += executeAttack(playerAttack, true);
 				output += "\n";
-				output += "==========";
 			}
 		}
 		

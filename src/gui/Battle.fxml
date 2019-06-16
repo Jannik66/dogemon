@@ -94,6 +94,13 @@
                            </center>
                         </BorderPane>
                      </top>
+                     <bottom>
+                        <Label fx:id="Console" prefHeight="92.0" prefWidth="234.0" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Pixel UniCode Regular" size="15.0" />
+                           </font>
+                        </Label>
+                     </bottom>
                   </BorderPane>
                </top>
             </BorderPane>

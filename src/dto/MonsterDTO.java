@@ -12,10 +12,11 @@ public class MonsterDTO {
 	private int initiative;
 	private String picturefrontpath;
 	private String picturebackpath;
+	private String picturelogopath;
 	private List<Integer> attackids;
 
 	public MonsterDTO(int id, String name, int hp, int maxHp, int attackpower, int defensepower, int initiative,
-			String picturefrontpath, String picturebackpath, List<Integer> attackids2) {
+			String picturefrontpath, String picturebackpath, String picturelogopath, List<Integer> attackids2) {
 		this.id = id;
 		this.name = name;
 		this.hp = hp;
@@ -25,6 +26,7 @@ public class MonsterDTO {
 		this.initiative = initiative;
 		this.picturefrontpath = picturefrontpath;
 		this.picturebackpath = picturebackpath;
+		this.picturelogopath = picturelogopath;
 		this.attackids = attackids2;
 	}
 
@@ -86,5 +88,9 @@ public class MonsterDTO {
 	
 	public String getPicturebackpath() {
 		return picturebackpath;
+	}
+	
+	public String getPicturelogopath() {
+		return picturelogopath;
 	}
 }

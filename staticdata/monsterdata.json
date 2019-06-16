@@ -9,6 +9,7 @@
             "initiative": 3,
             "picturefrontpath": "Loopbrother.png",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 0, 1 ]
         },
         {
@@ -20,6 +21,7 @@
             "initiative": 5,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         },
         {
@@ -31,6 +33,7 @@
             "initiative": 8,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         },
         {
@@ -42,6 +45,7 @@
             "initiative": 5,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         },
         {
@@ -53,6 +57,7 @@
             "initiative": 1,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         },
         {
@@ -64,6 +69,7 @@
             "initiative": 3,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         },
         {
@@ -75,6 +81,7 @@
             "initiative": 7,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         },
         {
@@ -86,6 +93,7 @@
             "initiative": 4,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         },
         {
@@ -97,6 +105,7 @@
             "initiative": 2,
             "picturefrontpath": "ewrof3ufirhf",
             "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
             "attackids": [ 1, 2 ]
         }
         

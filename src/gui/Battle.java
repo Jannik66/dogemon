@@ -31,6 +31,9 @@ public class Battle {
 	@FXML
 	private ImageView ImageAttack2;
 	
+	@FXML
+	private Label Console;
+	
 	private MainStage mainStage;
 
 	
@@ -59,22 +62,22 @@ public class Battle {
 		OpponentName.setText(mainStage.getOpponent().getData().getName());
 	}
 	
-	public void addConsole(String output) {
-		System.out.println(output);
+	public void editConsole(String output) {
+		Console.setText(output);
 	}
 	
 	@FXML
 	private void Attk1() {
 		// Attack with index 0
 		String output = mainStage.Attack(0);
-		addConsole(output);
+		editConsole(output);
 	}
 	
 	@FXML
 	private void Attk2() {
 		// Attack with index 1
 		String output = mainStage.Attack(1);
-		addConsole(output);
+		editConsole(output);
 	}
 	
 	@FXML
