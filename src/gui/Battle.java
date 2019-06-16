@@ -59,16 +59,22 @@ public class Battle {
 		OpponentName.setText(mainStage.getOpponent().getData().getName());
 	}
 	
+	public void addConsole(String output) {
+		System.out.println(output);
+	}
+	
 	@FXML
 	private void Attk1() {
 		// Attack with index 0
-		mainStage.Attack(0);
+		String output = mainStage.Attack(0);
+		addConsole(output);
 	}
 	
 	@FXML
 	private void Attk2() {
 		// Attack with index 1
-		mainStage.Attack(1);
+		String output = mainStage.Attack(1);
+		addConsole(output);
 	}
 	
 	@FXML

@@ -107,8 +107,9 @@ public class MainStage extends Application {
     	battlelogic = new BattleLogic(MonsterId, menulogic.getAllMonsters(), menulogic.getAllAttacks());
     }
     
-    public void Attack(int attkNr) {
-    	battlelogic.Attack(attkNr);
+    public String Attack(int attkNr) {
+    	String output = battlelogic.Attack(attkNr);
+    	return output;
     }
     
     public ArrayList<Monster> getAllMonsters() {

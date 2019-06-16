@@ -2,9 +2,7 @@ package logic;
 
 import java.util.ArrayList;
 
-import data.AttackDAO;
 import data.MonsterDAO;
-import dto.AttackDTO;
 import dto.MonsterDTO;
 
 public class BattleLogic {
@@ -52,42 +50,68 @@ public class BattleLogic {
 		return opponentMonster;
 	}
 
-	public void Attack(int attkNr) {
+	public String Attack(int attkNr) {
 		Attack playerAttack = playerMonster.getAttacks().get(attkNr);
 		Attack opponentAttack = evaluateOpponentAttack();
-		executeRound(playerAttack, opponentAttack);
+		String output = executeRound(playerAttack, opponentAttack);
+		return output;
 	}
 
-	private void executeRound(Attack playerAttack, Attack opponentAttack) {
+	private String executeRound(Attack playerAttack, Attack opponentAttack) {
+		String output = "";
 		if (playerMonster.getData().getInitiative() > opponentMonster.getData().getInitiative()) {
-			executeAttack(playerAttack, true);
-			executeAttack(opponentAttack, false);
+			output += executeAttack(playerAttack, true);
+			output += "\n";
+			output += "----------";
+			output += "\n";
+			output += executeAttack(opponentAttack, false);
+			output += "\n";
+			output += "==========";
 		} else if (playerMonster.getData().getInitiative() > opponentMonster.getData().getInitiative()) {
-			executeAttack(opponentAttack, false);
-			executeAttack(playerAttack, true);
+			output += executeAttack(opponentAttack, false);
+			output += "\n";
+			output += "----------";
+			output += "\n";
+			output += executeAttack(playerAttack, true);
+			output += "\n";
+			output += "==========";
 		} else {
 			// If the Monsters have the same initiative, a random Monster will be picked
 			int initiative = (int) Math.floor(Math.random() * 2);
 			if (initiative == 0) {
-				executeAttack(playerAttack, true);
-				executeAttack(opponentAttack, false);
+				output += executeAttack(playerAttack, true);
+				output += "\n";
+				output += "----------";
+				output += "\n";
+				output += executeAttack(opponentAttack, false);
+				output += "\n";
+				output += "==========";
 			} else {
-				executeAttack(opponentAttack, false);
-				executeAttack(playerAttack, true);
+				output += executeAttack(opponentAttack, false);
+				output += "\n";
+				output += "----------";
+				output += "\n";
+				output += executeAttack(playerAttack, true);
+				output += "\n";
+				output += "==========";
 			}
 		}
+		
+		return output;
 	}
 
-	private void executeAttack(Attack attack, boolean isPlayer) {
+	private String executeAttack(Attack attack, boolean isPlayer) {
+		String action = "";
 		int oldValue;
+		int newValue;
 		int attackpower;
 		int defensepower;
 		int initiative;
 		Monster targetMonster;
+		Monster executeMonster;
 		// Get impact of attack
 		int impact = attack.getData().getImpact();
-		
-		
+
 		// Get Targeted Monster and set values needed by the attack like attackpower, defensepower and initiative
 		// First you have to check which Monster performed the attack,
 		// then you have to check the targeted Monster by the attack
@@ -95,19 +119,23 @@ public class BattleLogic {
 			attackpower = playerMonster.getSpecificStat("attackpower");
 			defensepower = opponentMonster.getSpecificStat("defensepower");
 			initiative = opponentMonster.getSpecificStat("initiative");
-			if (attack.getData().getTargetmonster() == "opponent") {
+			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster = opponentMonster;
+				executeMonster = playerMonster;
 			} else {
 				targetMonster = playerMonster;
+				executeMonster = playerMonster;
 			}
 		} else {
 			attackpower = opponentMonster.getSpecificStat("attackpower");
 			defensepower = playerMonster.getSpecificStat("defensepower");
 			initiative = playerMonster.getSpecificStat("initiative");
-			if (attack.getData().getTargetmonster() == "opponent") {
+			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster = playerMonster;
+				executeMonster = opponentMonster;
 			} else {
 				targetMonster = opponentMonster;
+				executeMonster = opponentMonster;
 			}
 		}
 		
@@ -129,27 +157,29 @@ public class BattleLogic {
 			}
 			break;
 		case "attackpower":
-			if (attack.getData().getTargetmonster() == "opponent") {
+			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster.getData().setAttackpower(oldValue - (attackpower / impact));
 			} else {
 				targetMonster.getData().setAttackpower(oldValue + (attackpower * impact));
 			}
 			break;
 		case "defensepower":
-			if (attack.getData().getTargetmonster() == "opponent") {
+			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster.getData().setAttackpower(oldValue - (defensepower / impact));
 			} else {
 				targetMonster.getData().setAttackpower(oldValue + (defensepower * impact));
 			}
 			break;
 		case "initiative":
-			if (attack.getData().getTargetmonster() == "opponent") {
+			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster.getData().setAttackpower(oldValue - (initiative / impact));
 			} else {
 				targetMonster.getData().setAttackpower(oldValue + (initiative * impact));
 			}
 			break;
 		}
+		
+		newValue = targetMonster.getSpecificStat(attack.getData().getTargetstat());
 		
 		// OPPONENT, HP: attackpower * impact / defensepower
 		// OPPONENT, attackpower: attackpower / impact
@@ -159,10 +189,10 @@ public class BattleLogic {
 		// PLAYER, attackpower: attackpower * impact
 		// PLAYER, defense: defensepower * impact
 		// PLAYER, initiative: initiative * impact
-		
-		/*System.out.println(attack.getData().getName() + " " + targetMonster.getData().getName());
-		System.out.println("Changed " + attack.getData().getTargetstat() + " from " + oldValue + " to " + targetMonster.getSpecificStat(attack.getData().getTargetstat()));
-		System.out.println("====================================");*/
+		action += executeMonster.getData().getName() + " used " + attack.getData().getName() + ".";
+		action += "\n";
+		action += targetMonster.getData().getName() + "'s " + attack.getData().getTargetstat() + (newValue > oldValue ? " got increased by " : newValue == oldValue ? " stayed at " : " got decreased by ") + (newValue > oldValue ? newValue - oldValue : newValue == oldValue ? newValue : oldValue - newValue);
+		return action;
 	}
 
 	private Attack evaluateOpponentAttack() {

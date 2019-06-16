@@ -2,7 +2,7 @@
     "attacks": [
         {
             "id": 0,
-            "name": "Nieser",
+            "name": "Scratch",
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 4,
@@ -10,10 +10,10 @@
         },
         {
             "id": 1,
-            "name": "Fallrückzieher",
-            "targetmonster": "opponent",
+            "name": "Eat Lööp",
+            "targetmonster": "player",
             "targetstat": "hp",
-            "impact": 4,
+            "impact": 5,
             "imagepath": "patheiofo/to/image.png"
         },
         {
