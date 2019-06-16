@@ -7,9 +7,9 @@
             "attackpower": 4,
             "defensepower": 10,
             "initiative": 3,
-            "picturefrontpath": "Loopbrother.png",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/LoopFront.png",
+            "picturebackpath": "staticdata/pictures/LoopBack.png",
+            "picturelogopath": "staticdata/pictures/LoopLogo.png",
             "attackids": [ 0, 1 ]
         },
         {
@@ -19,9 +19,9 @@
             "attackpower": 7,
             "defensepower": 3,
             "initiative": 5,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/BoyeFront.png",
+            "picturebackpath": "staticdata/pictures/BoyeBack.png",
+            "picturelogopath": "staticdata/pictures/BoyeLogo.png",
             "attackids": [ 2, 3 ]
         },
         {

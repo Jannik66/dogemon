@@ -14,15 +14,15 @@
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Select0" onMouseEntered="#Info0" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="10.0" onMouseClicked="#Select1" onMouseEntered="#Info1" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="10.0" onMouseClicked="#Select2" onMouseEntered="#Info2" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="105.0" onMouseClicked="#Select3" onMouseEntered="#Info3" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="105.0" onMouseClicked="#Select4" onMouseEntered="#Info4" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="105.0" onMouseClicked="#Select5" onMouseEntered="#Info5" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="200.0" onMouseClicked="#Select6" onMouseEntered="#Info6" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="200.0" onMouseClicked="#Select7" onMouseEntered="#Info7" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
-                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="200.0" onMouseClicked="#Select8" onMouseEntered="#Info8" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo0" fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#Select0" onMouseEntered="#Info0" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo1" fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="10.0" onMouseClicked="#Select1" onMouseEntered="#Info1" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo2" fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="10.0" onMouseClicked="#Select2" onMouseEntered="#Info2" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo3" fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="105.0" onMouseClicked="#Select3" onMouseEntered="#Info3" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo4" fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="105.0" onMouseClicked="#Select4" onMouseEntered="#Info4" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo5" fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="105.0" onMouseClicked="#Select5" onMouseEntered="#Info5" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo6" fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="200.0" onMouseClicked="#Select6" onMouseEntered="#Info6" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo7" fitHeight="90.0" fitWidth="90.0" layoutX="105.0" layoutY="200.0" onMouseClicked="#Select7" onMouseEntered="#Info7" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="MonsterLogo8" fitHeight="90.0" fitWidth="90.0" layoutX="200.0" layoutY="200.0" onMouseClicked="#Select8" onMouseEntered="#Info8" onMouseExited="#NoInfo" pickOnBounds="true" preserveRatio="true" />
                </children>
             </Pane>
          </center>

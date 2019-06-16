@@ -2,6 +2,7 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
 
@@ -62,6 +63,8 @@ public class Battle {
 		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
 		OpponentHP.setText(
 				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
+		ImagePlayer.setImage(new Image("file:" + mainStage.getPlayer().getData().getPicturebackpath()));
+		ImageOpponent.setImage(new Image("file:" + mainStage.getOpponent().getData().getPicturefrontpath()));
 	}
 
 	public void editConsole(String output) {

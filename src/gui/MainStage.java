@@ -59,6 +59,7 @@ public class MainStage extends Application {
 
 			Selection controller = loader.getController();
 			controller.setMainStage(this);
+			controller.initSelection();
 
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -2,6 +2,8 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
 import logic.Monster;
 
@@ -28,6 +30,24 @@ public class Selection {
 	private Label InfoAttack1;
 	@FXML
 	private Label InfoAttack2;
+	@FXML
+	private ImageView MonsterLogo0;
+	@FXML
+	private ImageView MonsterLogo1;
+	@FXML
+	private ImageView MonsterLogo2;
+	@FXML
+	private ImageView MonsterLogo3;
+	@FXML
+	private ImageView MonsterLogo4;
+	@FXML
+	private ImageView MonsterLogo5;
+	@FXML
+	private ImageView MonsterLogo6;
+	@FXML
+	private ImageView MonsterLogo7;
+	@FXML
+	private ImageView MonsterLogo8;
 
 	private MainStage mainStage;
 
@@ -47,14 +67,23 @@ public class Selection {
 	@FXML
 	private void initialize() {
 	}
+	
+	public void initSelection() {
+		NoInfo();
+		MonsterLogo0.setImage(new Image("file:" + Monsters.get(0).getData().getPicturelogopath()));
+		MonsterLogo1.setImage(new Image("file:" + Monsters.get(1).getData().getPicturelogopath()));
+		MonsterLogo2.setImage(new Image("file:" + Monsters.get(2).getData().getPicturelogopath()));
+		MonsterLogo3.setImage(new Image("file:" + Monsters.get(3).getData().getPicturebackpath()));
+		MonsterLogo4.setImage(new Image("file:" + Monsters.get(4).getData().getPicturelogopath()));
+		MonsterLogo5.setImage(new Image("file:" + Monsters.get(5).getData().getPicturelogopath()));
+		MonsterLogo6.setImage(new Image("file:" + Monsters.get(6).getData().getPicturelogopath()));
+		MonsterLogo7.setImage(new Image("file:" + Monsters.get(7).getData().getPicturelogopath()));
+		MonsterLogo8.setImage(new Image("file:" + Monsters.get(8).getData().getPicturelogopath()));
+	}
 
 	public void setMainStage(MainStage mainStage) {
 		this.mainStage = mainStage;
 		Monsters = mainStage.getAllMonsters();
-	}
-
-	public void initMenu() {
-		NoInfo();
 	}
 
 	@FXML
