@@ -18,12 +18,116 @@
         },
         {
             "id": 2,
-            "name": "BigChungusDrop",
+            "name": "Bite",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 12,
-            "imagepath": "patheiofo/to/image.png"
-        } 
+            "impact": 7,
+            "imagepath": "path"
+        },
+        {
+            "id": 3,
+            "name": "Happiness noises",
+            "targetmonster": "player",
+            "targetstat": "attackpower",
+            "impact": 2,
+            "imagepath": "path"
+        },
+        {
+            "id": 4,
+            "name": "Origami",
+            "targetmonster": "player",
+            "targetstat": "defensepower",
+            "impact": 2,
+            "imagepath": "path"
+        },
+        {
+            "id": 5,
+            "name": "Laser",
+            "targetmonster": "oppponent",
+            "targetstat": "hp",
+            "impact": 3,
+            "imagepath": "path"
+        },
+        {
+            "id": 6,
+            "name": "Shine bright",
+            "targetmonster": "opponent",
+            "targetstat": "defensepower",
+            "impact": 3,
+            "imagepath": "path"
+        },
+        {
+            "id": 7,
+            "name": "Poison spore",
+            "targetmonster": "opponent",
+            "targetstat": "hp",
+            "impact": 4,
+            "imagepath": "path"
+        },
+        {
+            "id": 8,
+            "name": "Grow",
+            "targetmonster": "player",
+            "targetstat": "hp",
+            "impact": 2,
+            "imagepath": "path"
+        },
+        {
+            "id": 9,
+            "name": "Kick",
+            "targetmonster": "opponent",
+            "targetstat": "hp",
+            "impact": 3,
+            "imagepath": "path"
+        },
+        {
+            "id": 10,
+            "name": "Flex",
+            "targetmonster": "opponent",
+            "targetstat": "attackpower",
+            "impact": 3,
+            "imagepath": "path"
+        },
+        {
+            "id": 11,
+            "name": "Sweet aroma",
+            "targetmonster": "opponent",
+            "targetstat": "initiative",
+            "impact": 3,
+            "imagepath": "path"
+        },
+        {
+            "id": 12,
+            "name": "Flamethrower",
+            "targetmonster": "opponent",
+            "targetstat": "hp",
+            "impact": 4,
+            "imagepath": "path"
+        },
+        {
+            "id": 13,
+            "name": "Supersonic flight",
+            "targetmonster": "player",
+            "targetstat": "initiative",
+            "impact": 4,
+            "imagepath": "path"
+        },
+        {
+            "id": 14,
+            "name": "Pounce",
+            "targetmonster": "opponent",
+            "targetstat": "hp",
+            "impact": 4,
+            "imagepath": "path"
+        },
+        {
+            "id": 15,
+            "name": "Bounce",
+            "targetmonster": "player",
+            "targetstat": "attackpower",
+            "impact": 4,
+            "imagepath": "path"
+        }
         
     ]
 }
