@@ -28,7 +28,7 @@ public class AttackDTO {
 	public String getTargetmonster() {
 		return targetmonster;
 	}
-	
+
 	public String getTargetstat() {
 		return targetstat;
 	}

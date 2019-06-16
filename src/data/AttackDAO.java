@@ -27,7 +27,7 @@ public class AttackDAO {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}	
+	}
 
 	public ArrayList<AttackDTO> getAllAttacks() {
 		ArrayList<AttackDTO> AttackDTOs = new ArrayList<AttackDTO>();
@@ -41,7 +41,7 @@ public class AttackDAO {
 
 			AttackDTOs.add(new AttackDTO(monster_id, name, targetmonster, targetstat, impact, imagepath));
 		}
-		
+
 		return AttackDTOs;
 	}
 

@@ -43,7 +43,7 @@
         {
             "id": 5,
             "name": "Laser",
-            "targetmonster": "oppponent",
+            "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 3,
             "imagepath": "path"

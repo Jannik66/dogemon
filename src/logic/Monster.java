@@ -30,9 +30,9 @@ public class Monster {
 	public MonsterDTO getData() {
 		return data;
 	}
-	
+
 	public int getSpecificStat(String stat) {
-		switch(stat) {
+		switch (stat) {
 		case "hp":
 			return data.getHp();
 		case "attackpower":
@@ -46,9 +46,9 @@ public class Monster {
 			return 0;
 		}
 	}
-	
+
 	public void setSpecificStat(String stat, int value) {
-		switch(stat) {
+		switch (stat) {
 		case "hp":
 			data.setHp(value);
 			break;

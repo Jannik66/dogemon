@@ -22,16 +22,16 @@ public class MenuLogic {
 	}
 
 	private void createMonsters() {
-		
+
 		MonsterDAO MonsterDataAccessObject = new MonsterDAO();
-		
+
 		MonsterDTOs = MonsterDataAccessObject.getAllMonsters();
 		for (MonsterDTO monster : MonsterDTOs) {
 			Monsters.add(new Monster(monster));
 		}
 
 	}
-	
+
 	private void createAttacks() {
 
 		AttackDAO AttackDataAccessObject = new AttackDAO();
@@ -52,7 +52,7 @@ public class MenuLogic {
 	public ArrayList<Monster> getAllMonsters() {
 		return Monsters;
 	}
-	
+
 	public ArrayList<Attack> getAllAttacks() {
 		return Attacks;
 	}

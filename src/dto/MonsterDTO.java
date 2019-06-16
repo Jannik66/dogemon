@@ -37,7 +37,7 @@ public class MonsterDTO {
 	public void setHp(int hp) {
 		this.hp = hp;
 	}
-	
+
 	public int getMaxHp() {
 		return maxHp;
 	}
@@ -85,11 +85,11 @@ public class MonsterDTO {
 	public String getPicturefrontpath() {
 		return picturefrontpath;
 	}
-	
+
 	public String getPicturebackpath() {
 		return picturebackpath;
 	}
-	
+
 	public String getPicturelogopath() {
 		return picturelogopath;
 	}

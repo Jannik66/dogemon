@@ -6,7 +6,7 @@ import data.MonsterDAO;
 import dto.MonsterDTO;
 
 public class BattleLogic {
-	
+
 	Monster playerMonster;
 	Monster opponentMonster;
 
@@ -92,7 +92,7 @@ public class BattleLogic {
 				output += "\n";
 			}
 		}
-		
+
 		return output;
 	}
 
@@ -108,7 +108,8 @@ public class BattleLogic {
 		// Get impact of attack
 		int impact = attack.getData().getImpact();
 
-		// Get Targeted Monster and set values needed by the attack like attackpower, defensepower and initiative
+		// Get Targeted Monster and set values needed by the attack like attackpower,
+		// defensepower and initiative
 		// First you have to check which Monster performed the attack,
 		// then you have to check the targeted Monster by the attack
 		if (isPlayer) {
@@ -134,10 +135,10 @@ public class BattleLogic {
 				executeMonster = opponentMonster;
 			}
 		}
-		
+
 		// Set oldValue which get changed by performing the attack
 		oldValue = targetMonster.getSpecificStat(attack.getData().getTargetstat());
-		
+
 		switch (attack.getData().getTargetstat()) {
 		case "hp":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
@@ -145,7 +146,7 @@ public class BattleLogic {
 				// TODO: HANDLE 0 HP
 			} else {
 				targetMonster.getData().setHp(oldValue + (impact));
-				
+
 				// If Hp is greater than max, set to max
 				if (targetMonster.getData().getHp() > targetMonster.getData().getMaxHp()) {
 					targetMonster.getData().setHp(targetMonster.getData().getMaxHp());
@@ -174,9 +175,9 @@ public class BattleLogic {
 			}
 			break;
 		}
-		
+
 		newValue = targetMonster.getSpecificStat(attack.getData().getTargetstat());
-		
+
 		// OPPONENT, HP: attackpower * impact / defensepower
 		// OPPONENT, attackpower: attackpower / impact
 		// OPPONENT, defense: defensepower / impact
@@ -187,7 +188,10 @@ public class BattleLogic {
 		// PLAYER, initiative: initiative * impact
 		action += executeMonster.getData().getName() + " used " + attack.getData().getName() + ".";
 		action += "\n";
-		action += targetMonster.getData().getName() + "'s " + attack.getData().getTargetstat() + (newValue > oldValue ? " got increased by " : newValue == oldValue ? " stayed at " : " got decreased by ") + (newValue > oldValue ? newValue - oldValue : newValue == oldValue ? newValue : oldValue - newValue);
+		action += targetMonster.getData().getName() + "'s " + attack.getData().getTargetstat()
+				+ (newValue > oldValue ? " got increased by "
+						: newValue == oldValue ? " stayed at " : " got decreased by ")
+				+ (newValue > oldValue ? newValue - oldValue : newValue == oldValue ? newValue : oldValue - newValue);
 		return action;
 	}
 

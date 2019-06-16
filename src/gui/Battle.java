@@ -16,12 +16,12 @@ public class Battle {
 	@FXML
 	private Label PlayerHP;
 	@FXML
-	private Label PlayerName;	
+	private Label PlayerName;
 	@FXML
 	private Label OpponentHP;
 	@FXML
 	private Label OpponentName;
-	
+
 	@FXML
 	private ImageView ImagePlayer;
 	@FXML
@@ -30,60 +30,67 @@ public class Battle {
 	private ImageView ImageAttack1;
 	@FXML
 	private ImageView ImageAttack2;
-	
+
 	@FXML
 	private Label Console;
-	
+
 	private MainStage mainStage;
 
-	
 	public Battle() {
-		
+
 		try {
-				@SuppressWarnings("unused")
-				final Font Pixelfont = Font.loadFont(new FileInputStream(new File("./src/gui/Pixel-UniCode.ttf")),25);
-			} catch (FileNotFoundException e) {
+			@SuppressWarnings("unused")
+			final Font Pixelfont = Font.loadFont(new FileInputStream(new File("./src/gui/Pixel-UniCode.ttf")), 25);
+		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		
-	}
-	
-	@FXML
-	private void initialize(){
 
 	}
-	
+
+	@FXML
+	private void initialize() {
+
+	}
+
 	public void setMainStage(MainStage mainStage) {
 		this.mainStage = mainStage;
 	}
-	
+
 	public void initBattle() {
 		PlayerName.setText(mainStage.getPlayer().getData().getName());
 		OpponentName.setText(mainStage.getOpponent().getData().getName());
+		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
+		OpponentHP.setText(
+				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
 	}
-	
+
 	public void editConsole(String output) {
 		Console.setText(output);
 	}
-	
+
 	@FXML
 	private void Attk1() {
 		// Attack with index 0
 		String output = mainStage.Attack(0);
+		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
+		OpponentHP.setText(
+				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
 		editConsole(output);
 	}
-	
+
 	@FXML
 	private void Attk2() {
 		// Attack with index 1
 		String output = mainStage.Attack(1);
+		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
+		OpponentHP.setText(
+				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
 		editConsole(output);
 	}
-	
+
 	@FXML
 	private void Surrender() {
 		mainStage.showEndscreenGUI(mainStage.getOpponent());
 	}
-	
-	
+
 }
