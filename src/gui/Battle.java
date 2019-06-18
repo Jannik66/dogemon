@@ -1,6 +1,7 @@
 package gui;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -10,7 +11,6 @@ import logic.Monster;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.concurrent.TimeUnit;
 
 import gui.MainStage;
 
@@ -37,7 +37,13 @@ public class Battle {
 	@FXML
 	private Label Console;
 
+	@FXML
+	private Button ControlButton;
+
 	private MainStage mainStage;
+
+	private boolean ended = false;
+	private Monster winner;
 
 	public Battle() {
 
@@ -74,42 +80,51 @@ public class Battle {
 		System.out.println(mainStage.getOpponent().getData().getHp());
 		System.out.println(mainStage.getPlayer().getData().getHp());
 		if (mainStage.getOpponent().getData().getHp() == 0) {
-			System.out.println("E");
 			endBattle(mainStage.getPlayer());
 		} else if (mainStage.getPlayer().getData().getHp() == 0) {
-			System.out.println("E");
 			endBattle(mainStage.getOpponent());
 		}
 	}
 
 	private void endBattle(Monster winner) {
-		// TODO: Timeout for 3 seconds
-		mainStage.showEndscreenGUI(winner);
+		ended = true;
+		this.winner = winner;
+		ControlButton.setText("End");
 	}
 
 	@FXML
 	private void Attk1() {
 		// Attack with index 0
-		String output = mainStage.Attack(0);
-		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
-		OpponentHP.setText(
-				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
-		afterAttack(output);
+		if (!ended) {
+			String output = mainStage.Attack(0);
+			PlayerHP.setText(
+					mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
+			OpponentHP.setText(
+					mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
+			afterAttack(output);
+		}
 	}
 
 	@FXML
 	private void Attk2() {
 		// Attack with index 1
-		String output = mainStage.Attack(1);
-		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
-		OpponentHP.setText(
-				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
-		afterAttack(output);
+		if (!ended) {
+			String output = mainStage.Attack(1);
+			PlayerHP.setText(
+					mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
+			OpponentHP.setText(
+					mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
+			afterAttack(output);
+		}
 	}
 
 	@FXML
-	private void Surrender() {
-		mainStage.showEndscreenGUI(mainStage.getOpponent());
+	private void end() {
+		if (ended) {
+			mainStage.showEndscreenGUI(winner);
+		} else {
+			mainStage.showEndscreenGUI(mainStage.getOpponent());
+		}
 	}
 
 }

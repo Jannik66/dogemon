@@ -79,9 +79,9 @@
             "attackpower": 6,
             "defensepower": 4,
             "initiative": 7,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/LilyFront.png",
+            "picturebackpath": "staticdata/pictures/LilyBack.png",
+            "picturelogopath": "staticdata/pictures/LilyLogo.png",
             "attackids": [ 7, 11 ]
         },
         {

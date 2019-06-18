@@ -25,7 +25,8 @@ public class BattleLogic {
 
 	private void defineOpponent(int PlayerMonsterId, ArrayList<Monster> monsters, ArrayList<Attack> attacks) {
 		int OpponentMonsterId = (int) Math.floor(Math.random() * monsters.size());
-
+		// Debug: Choose opponent
+		//OpponentMonsterId = 4;
 		for (Monster monster : monsters) {
 			if (monster.getData().getId() == OpponentMonsterId && monster.getData().getId() != PlayerMonsterId) {
 				this.opponentMonster = monster;
