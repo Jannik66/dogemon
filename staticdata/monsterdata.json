@@ -55,9 +55,9 @@
             "attackpower": 2,
             "defensepower": 2,
             "initiative": 1,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/MgusFront.png",
+            "picturebackpath": "staticdata/pictures/MgusBack.png",
+            "picturelogopath": "staticdata/pictures/MgusLogo.png",
             "attackids": [ 7, 8 ]
         },
         {
