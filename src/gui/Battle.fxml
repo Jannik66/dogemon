@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Battle">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.211" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Battle">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <left>
@@ -26,6 +26,11 @@
                                     <Image url="@../../staticdata/pictures/LoopBack.png" />
                                  </image>
                               </ImageView>
+                              <Label fx:id="Console" layoutX="5.0" layoutY="14.0" prefHeight="85.0" prefWidth="270.0">
+                                 <font>
+                                    <Font name="Pixel UniCode Regular" size="15.0" />
+                                 </font>
+                              </Label>
                            </children></Pane>
                      </center>
                      <bottom>
@@ -94,13 +99,6 @@
                            </center>
                         </BorderPane>
                      </top>
-                     <bottom>
-                        <Label fx:id="Console" prefHeight="92.0" prefWidth="234.0" BorderPane.alignment="CENTER">
-                           <font>
-                              <Font name="Pixel UniCode Regular" size="15.0" />
-                           </font>
-                        </Label>
-                     </bottom>
                   </BorderPane>
                </top>
             </BorderPane>
