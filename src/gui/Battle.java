@@ -3,6 +3,7 @@ package gui;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
@@ -24,6 +25,11 @@ public class Battle {
 	private Label OpponentHP;
 	@FXML
 	private Label OpponentName;
+	
+	@FXML
+	private ProgressBar PlayerHPBar;
+	@FXML
+	private ProgressBar OpponentHPBar;
 
 	@FXML
 	private ImageView ImagePlayer;
@@ -73,12 +79,14 @@ public class Battle {
 				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
 		ImagePlayer.setImage(new Image("file:" + mainStage.getPlayer().getData().getPicturebackpath()));
 		ImageOpponent.setImage(new Image("file:" + mainStage.getOpponent().getData().getPicturefrontpath()));
+		PlayerHPBar.setProgress(1);
+		OpponentHPBar.setProgress(1);
 	}
 
 	private void afterAttack(String output) {
 		Console.setText(output);
-		System.out.println(mainStage.getOpponent().getData().getHp());
-		System.out.println(mainStage.getPlayer().getData().getHp());
+		PlayerHPBar.setProgress((double)mainStage.getPlayer().getData().getHp() / (double)mainStage.getPlayer().getData().getMaxHp());
+		OpponentHPBar.setProgress((double)mainStage.getOpponent().getData().getHp() / (double)mainStage.getOpponent().getData().getMaxHp());
 		if (mainStage.getOpponent().getData().getHp() == 0) {
 			endBattle(mainStage.getPlayer());
 		} else if (mainStage.getPlayer().getData().getHp() == 0) {
