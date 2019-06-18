@@ -31,9 +31,9 @@
             "attackpower": 10,
             "defensepower": 10,
             "initiative": 8,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/SnekFront.png",
+            "picturebackpath": "staticdata/pictures/SnekBack.png",
+            "picturelogopath": "staticdata/pictures/SnekLogo.png",
             "attackids": [ 2, 4 ]
         },
         {

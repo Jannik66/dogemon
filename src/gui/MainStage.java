@@ -20,7 +20,7 @@ public class MainStage extends Application {
 	private Stage primaryStage;
 	private BorderPane rootLayout;
 
-	private MenuLogic menulogic = new MenuLogic();
+	private MenuLogic menulogic;
 
 	private BattleLogic battlelogic;
 
@@ -50,6 +50,7 @@ public class MainStage extends Application {
 	}
 
 	public void showSelectionGUI() {
+		menulogic = new MenuLogic();
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(MainStage.class.getResource("Selection.fxml"));

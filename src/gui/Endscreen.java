@@ -3,6 +3,8 @@ package gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
 import logic.Monster;
 
@@ -18,6 +20,9 @@ public class Endscreen {
 
 	@FXML
 	private Label WinnerName;
+
+	@FXML
+	private ImageView WinnerPicture;
 
 	public Endscreen() {
 
@@ -41,6 +46,7 @@ public class Endscreen {
 	public void initEndscreen(Monster Winner) {
 
 		WinnerName.setText(Winner.getData().getName() + " wins!");
+		WinnerPicture.setImage(new Image("file:" + Winner.getData().getPicturefrontpath()));
 	}
 
 	@FXML

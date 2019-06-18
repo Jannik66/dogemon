@@ -5,10 +5,12 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
+import logic.Monster;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.concurrent.TimeUnit;
 
 import gui.MainStage;
 
@@ -67,8 +69,22 @@ public class Battle {
 		ImageOpponent.setImage(new Image("file:" + mainStage.getOpponent().getData().getPicturefrontpath()));
 	}
 
-	public void editConsole(String output) {
+	private void afterAttack(String output) {
 		Console.setText(output);
+		System.out.println(mainStage.getOpponent().getData().getHp());
+		System.out.println(mainStage.getPlayer().getData().getHp());
+		if (mainStage.getOpponent().getData().getHp() == 0) {
+			System.out.println("E");
+			endBattle(mainStage.getPlayer());
+		} else if (mainStage.getPlayer().getData().getHp() == 0) {
+			System.out.println("E");
+			endBattle(mainStage.getOpponent());
+		}
+	}
+
+	private void endBattle(Monster winner) {
+		// TODO: Timeout for 3 seconds
+		mainStage.showEndscreenGUI(winner);
 	}
 
 	@FXML
@@ -78,7 +94,7 @@ public class Battle {
 		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
 		OpponentHP.setText(
 				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
-		editConsole(output);
+		afterAttack(output);
 	}
 
 	@FXML
@@ -88,7 +104,7 @@ public class Battle {
 		PlayerHP.setText(mainStage.getPlayer().getData().getHp() + "/" + mainStage.getPlayer().getData().getMaxHp());
 		OpponentHP.setText(
 				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
-		editConsole(output);
+		afterAttack(output);
 	}
 
 	@FXML

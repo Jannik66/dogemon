@@ -74,7 +74,8 @@ public class BattleLogic {
 			output += executeAttack(playerAttack, true);
 			output += "\n";
 		} else {
-			// If the Monsters have the same initiative, a random Monster will be picked
+			// If the Monsters have the same initiative, a random Monster will
+			// be picked
 			int initiative = (int) Math.floor(Math.random() * 2);
 			if (initiative == 0) {
 				output += executeAttack(playerAttack, true);
@@ -108,7 +109,8 @@ public class BattleLogic {
 		// Get impact of attack
 		int impact = attack.getData().getImpact();
 
-		// Get Targeted Monster and set values needed by the attack like attackpower,
+		// Get Targeted Monster and set values needed by the attack like
+		// attackpower,
 		// defensepower and initiative
 		// First you have to check which Monster performed the attack,
 		// then you have to check the targeted Monster by the attack
@@ -143,7 +145,11 @@ public class BattleLogic {
 		case "hp":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster.getData().setHp(oldValue - (attackpower * impact / defensepower));
-				// TODO: HANDLE 0 HP
+
+				// If HP is lower than 0, set to 0
+				if (targetMonster.getData().getHp() < 0) {
+					targetMonster.getData().setHp(0);
+				}
 			} else {
 				targetMonster.getData().setHp(oldValue + (impact));
 

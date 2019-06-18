@@ -67,7 +67,7 @@ public class Selection {
 	@FXML
 	private void initialize() {
 	}
-	
+
 	public void initSelection() {
 		NoInfo();
 		MonsterLogo0.setImage(new Image("file:" + Monsters.get(0).getData().getPicturelogopath()));
