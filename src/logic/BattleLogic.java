@@ -162,23 +162,23 @@ public class BattleLogic {
 			break;
 		case "attackpower":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
-				targetMonster.getData().setAttackpower(oldValue - (attackpower / impact));
+				targetMonster.getData().setAttackpower(oldValue - impact);
 			} else {
-				targetMonster.getData().setAttackpower(oldValue + (attackpower * impact));
+				targetMonster.getData().setAttackpower(oldValue + impact);
 			}
 			break;
 		case "defensepower":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
-				targetMonster.getData().setAttackpower(oldValue - (defensepower / impact));
+				targetMonster.getData().setAttackpower(oldValue - impact);
 			} else {
-				targetMonster.getData().setAttackpower(oldValue + (defensepower * impact));
+				targetMonster.getData().setAttackpower(oldValue + impact);
 			}
 			break;
 		case "initiative":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
-				targetMonster.getData().setAttackpower(oldValue - (initiative / impact));
+				targetMonster.getData().setAttackpower(oldValue - impact);
 			} else {
-				targetMonster.getData().setAttackpower(oldValue + (initiative * impact));
+				targetMonster.getData().setAttackpower(oldValue + impact);
 			}
 			break;
 		}
