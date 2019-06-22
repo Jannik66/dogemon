@@ -79,8 +79,11 @@ public class Battle {
 				mainStage.getOpponent().getData().getHp() + "/" + mainStage.getOpponent().getData().getMaxHp());
 		ImagePlayer.setImage(new Image("file:" + mainStage.getPlayer().getData().getPicturebackpath()));
 		ImageOpponent.setImage(new Image("file:" + mainStage.getOpponent().getData().getPicturefrontpath()));
+		ImageAttack1.setImage(new Image("file:" + mainStage.getPlayer().getAttacks().get(0).getData().getPicturePath()));
+		ImageAttack2.setImage(new Image("file:" + mainStage.getPlayer().getAttacks().get(1).getData().getPicturePath()));
 		PlayerHPBar.setProgress(1);
 		OpponentHPBar.setProgress(1);
+				
 	}
 
 	private void afterAttack(String output) {

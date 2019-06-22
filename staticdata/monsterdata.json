@@ -7,9 +7,9 @@
             "attackpower": 4,
             "defensepower": 10,
             "initiative": 3,
-            "picturefrontpath": "staticdata/pictures/LoopFront.png",
-            "picturebackpath": "staticdata/pictures/LoopBack.png",
-            "picturelogopath": "staticdata/pictures/LoopLogo.png",
+            "picturefrontpath": "staticdata/pictures/monster/LoopFront.png",
+            "picturebackpath": "staticdata/pictures/monster/LoopBack.png",
+            "picturelogopath": "staticdata/pictures/monster/LoopLogo.png",
             "attackids": [ 0, 1 ]
         },
         {
@@ -19,9 +19,9 @@
             "attackpower": 7,
             "defensepower": 3,
             "initiative": 5,
-            "picturefrontpath": "staticdata/pictures/BoyeFront.png",
-            "picturebackpath": "staticdata/pictures/BoyeBack.png",
-            "picturelogopath": "staticdata/pictures/BoyeLogo.png",
+            "picturefrontpath": "staticdata/pictures/monster/BoyeFront.png",
+            "picturebackpath": "staticdata/pictures/monster/BoyeBack.png",
+            "picturelogopath": "staticdata/pictures/monster/BoyeLogo.png",
             "attackids": [ 2, 3 ]
         },
         {
@@ -31,9 +31,9 @@
             "attackpower": 10,
             "defensepower": 10,
             "initiative": 8,
-            "picturefrontpath": "staticdata/pictures/SnekFront.png",
-            "picturebackpath": "staticdata/pictures/SnekBack.png",
-            "picturelogopath": "staticdata/pictures/SnekLogo.png",
+            "picturefrontpath": "staticdata/pictures/monster/SnekFront.png",
+            "picturebackpath": "staticdata/pictures/monster/SnekBack.png",
+            "picturelogopath": "staticdata/pictures/monster/SnekLogo.png",
             "attackids": [ 2, 4 ]
         },
         {
@@ -43,9 +43,9 @@
             "attackpower": 5,
             "defensepower": 2,
             "initiative": 5,
-            "picturefrontpath": "staticdata/pictures/MothFront.png",
-            "picturebackpath": "staticdata/pictures/MothBack.png",
-            "picturelogopath": "staticdata/pictures/MothLogo.png",
+            "picturefrontpath": "staticdata/pictures/monster/MothFront.png",
+            "picturebackpath": "staticdata/pictures/monster/MothBack.png",
+            "picturelogopath": "staticdata/pictures/monster/MothLogo.png",
             "attackids": [ 5, 6 ]
         },
         {
@@ -55,9 +55,9 @@
             "attackpower": 2,
             "defensepower": 2,
             "initiative": 1,
-            "picturefrontpath": "staticdata/pictures/MgusFront.png",
-            "picturebackpath": "staticdata/pictures/MgusBack.png",
-            "picturelogopath": "staticdata/pictures/MgusLogo.png",
+            "picturefrontpath": "staticdata/pictures/monster/MgusFront.png",
+            "picturebackpath": "staticdata/pictures/monster/MgusBack.png",
+            "picturelogopath": "staticdata/pictures/monster/MgusLogo.png",
             "attackids": [ 7, 8 ]
         },
         {
@@ -79,9 +79,9 @@
             "attackpower": 6,
             "defensepower": 4,
             "initiative": 7,
-            "picturefrontpath": "staticdata/pictures/LilyFront.png",
-            "picturebackpath": "staticdata/pictures/LilyBack.png",
-            "picturelogopath": "staticdata/pictures/LilyLogo.png",
+            "picturefrontpath": "staticdata/pictures/monster/LilyFront.png",
+            "picturebackpath": "staticdata/pictures/monster/LilyBack.png",
+            "picturelogopath": "staticdata/pictures/monster/LilyLogo.png",
             "attackids": [ 7, 11 ]
         },
         {
@@ -115,7 +115,7 @@
             "attackpower": 6,
             "defensepower": 8,
             "initiative": 2,
-            "picturefrontpath": "staticdata/pictures/SCCatFront.png",
+            "picturefrontpath": "staticdata/pictures/monster/SCCatFront.png",
             "picturebackpath": "pathewiofero",
             "picturelogopath": "path",
             "attackids": [ 16, 17 ]

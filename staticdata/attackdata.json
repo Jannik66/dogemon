@@ -5,8 +5,8 @@
             "name": "Scratch",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 4,
-            "picturepath": "patheiofo/to/image.png"
+            "impact": 14,
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 1,
@@ -14,15 +14,15 @@
             "targetmonster": "player",
             "targetstat": "hp",
             "impact": 5,
-            "picturepath": "patheiofo/to/image.png"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 2,
             "name": "Bite",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 7,
-            "picturepath": "path"
+            "impact": 17,
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 3,
@@ -30,7 +30,7 @@
             "targetmonster": "player",
             "targetstat": "attackpower",
             "impact": 2,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 4,
@@ -38,15 +38,15 @@
             "targetmonster": "player",
             "targetstat": "defensepower",
             "impact": 2,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 5,
             "name": "Laser",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 3,
-            "picturepath": "path"
+            "impact": 13,
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 6,
@@ -54,15 +54,15 @@
             "targetmonster": "opponent",
             "targetstat": "defensepower",
             "impact": 3,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 7,
             "name": "Poison spore",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 4,
-            "picturepath": "path"
+            "impact": 10,
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 8,
@@ -70,15 +70,15 @@
             "targetmonster": "player",
             "targetstat": "hp",
             "impact": 2,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 9,
             "name": "Kick",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 3,
-            "picturepath": "path"
+            "impact": 13,
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 10,
@@ -86,7 +86,7 @@
             "targetmonster": "opponent",
             "targetstat": "attackpower",
             "impact": 3,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 11,
@@ -94,15 +94,15 @@
             "targetmonster": "opponent",
             "targetstat": "defensepower",
             "impact": 3,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 12,
             "name": "Flamethrower",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 4,
-            "picturepath": "path"
+            "impact": 14,
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 13,
@@ -110,15 +110,15 @@
             "targetmonster": "player",
             "targetstat": "attackpower",
             "impact": 4,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 14,
             "name": "Pounce",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 4,
-            "picturepath": "path"
+            "impact": 14,
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 15,
@@ -126,7 +126,7 @@
             "targetmonster": "player",
             "targetstat": "attackpower",
             "impact": 4,
-            "picturepath": "path"
+            "picturepath": "staticdata/pictures/attacks/Attack.png"
         },
         {
             "id": 16,
@@ -141,7 +141,7 @@
             "name": "Crippling Depression",
             "targetmonster": "opponent",
             "targetstat": "attackpower",
-            "impact": 4,
+            "impact": 14,
             "picturepath": "NoPath"
         }
         
