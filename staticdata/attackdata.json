@@ -5,8 +5,8 @@
             "name": "Scratch",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 14,
-            "picturepath": "staticdata/pictures/attacks/Attack.png"
+            "impact": 10,
+            "picturepath": "staticdata/pictures/attacks/scratch.png"
         },
         {
             "id": 1,
@@ -14,7 +14,7 @@
             "targetmonster": "player",
             "targetstat": "hp",
             "impact": 5,
-            "picturepath": "staticdata/pictures/attacks/Attack.png"
+            "picturepath": "staticdata/pictures/attacks/eatLoop.png"
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 17,
-            "picturepath": "staticdata/pictures/attacks/Attack.png"
+            "picturepath": "staticdata/pictures/attacks/bite.png"
         },
         {
             "id": 3,
@@ -30,7 +30,7 @@
             "targetmonster": "player",
             "targetstat": "attackpower",
             "impact": 2,
-            "picturepath": "staticdata/pictures/attacks/Attack.png"
+            "picturepath": "staticdata/pictures/attacks/happy.png"
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@
             "targetmonster": "player",
             "targetstat": "defensepower",
             "impact": 2,
-            "picturepath": "staticdata/pictures/attacks/Attack.png"
+            "picturepath": "staticdata/pictures/attacks/origami.png"
         },
         {
             "id": 5,
@@ -46,7 +46,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 13,
-            "picturepath": "staticdata/pictures/attacks/Attack.png"
+            "picturepath": "staticdata/pictures/attacks/laser.png"
         },
         {
             "id": 6,
@@ -54,7 +54,7 @@
             "targetmonster": "opponent",
             "targetstat": "defensepower",
             "impact": 3,
-            "picturepath": "staticdata/pictures/attacks/Attack.png"
+            "picturepath": "staticdata/pictures/attacks/shine.png"
         },
         {
             "id": 7,
