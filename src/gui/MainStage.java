@@ -29,6 +29,7 @@ public class MainStage extends Application {
 	public void start(Stage primaryStage) {
 
 		this.primaryStage = primaryStage;
+		this.primaryStage.setResizable(false);
 		this.primaryStage.setTitle("Dogémon Lapislazuli Edition");
 		this.primaryStage.getIcons().add(new Image("file:staticdata/pictures/monster/LoopLogo.png"));
 
@@ -109,6 +110,8 @@ public class MainStage extends Application {
 
 	public void initializeBattleLogic(int MonsterId) {
 		battlelogic = new BattleLogic(MonsterId, menulogic.getAllMonsters(), menulogic.getAllAttacks());
+		this.primaryStage.getIcons().clear();
+		this.primaryStage.getIcons().add(new Image("file:" + battlelogic.getPlayerMonster().getData().getPicturelogopath()));
 	}
 
 	public String Attack(int attkNr) {

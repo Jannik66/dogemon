@@ -101,7 +101,7 @@
             "name": "Flamethrower",
             "targetmonster": "opponent",
             "targetstat": "hp",
-            "impact": 14,
+            "impact": 10,
             "picturepath": "staticdata/pictures/attacks/flame.png"
         },
         {
@@ -125,7 +125,7 @@
             "name": "Bounce",
             "targetmonster": "player",
             "targetstat": "attackpower",
-            "impact": 4,
+            "impact": 2,
             "picturepath": "staticdata/pictures/attacks/bounce.png"
         },
         {
