@@ -92,7 +92,7 @@
             "id": 11,
             "name": "Sweet aroma",
             "targetmonster": "opponent",
-            "targetstat": "initiative",
+            "targetstat": "defensepower",
             "impact": 3,
             "imagepath": "path"
         },
@@ -106,9 +106,9 @@
         },
         {
             "id": 13,
-            "name": "Supersonic flight",
+            "name": "Roar",
             "targetmonster": "player",
-            "targetstat": "initiative",
+            "targetstat": "attackpower",
             "impact": 4,
             "imagepath": "path"
         },

@@ -26,7 +26,7 @@ public class BattleLogic {
 	private void defineOpponent(int PlayerMonsterId, ArrayList<Monster> monsters, ArrayList<Attack> attacks) {
 		int OpponentMonsterId = (int) Math.floor(Math.random() * monsters.size());
 		// Debug: Choose opponent
-		//OpponentMonsterId = 4;
+		// OpponentMonsterId = 4;
 		for (Monster monster : monsters) {
 			if (monster.getData().getId() == OpponentMonsterId && monster.getData().getId() != PlayerMonsterId) {
 				this.opponentMonster = monster;
@@ -104,7 +104,6 @@ public class BattleLogic {
 		int newValue;
 		int attackpower;
 		int defensepower;
-		int initiative;
 		Monster targetMonster;
 		Monster executeMonster;
 		// Get impact of attack
@@ -118,7 +117,6 @@ public class BattleLogic {
 		if (isPlayer) {
 			attackpower = playerMonster.getSpecificStat("attackpower");
 			defensepower = opponentMonster.getSpecificStat("defensepower");
-			initiative = opponentMonster.getSpecificStat("initiative");
 			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster = opponentMonster;
 				executeMonster = playerMonster;
@@ -129,7 +127,6 @@ public class BattleLogic {
 		} else {
 			attackpower = opponentMonster.getSpecificStat("attackpower");
 			defensepower = playerMonster.getSpecificStat("defensepower");
-			initiative = playerMonster.getSpecificStat("initiative");
 			if (attack.getData().getTargetmonster().equals("opponent")) {
 				targetMonster = playerMonster;
 				executeMonster = opponentMonster;
@@ -145,40 +142,49 @@ public class BattleLogic {
 		switch (attack.getData().getTargetstat()) {
 		case "hp":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
-				targetMonster.getData().setHp(oldValue - (attackpower * impact / defensepower));
-
 				// If HP is lower than 0, set to 0
-				if (targetMonster.getData().getHp() < 0) {
+				if ((oldValue - (attackpower * impact / defensepower)) < 0) {
 					targetMonster.getData().setHp(0);
+				} else {
+					targetMonster.getData().setHp(oldValue - (attackpower * impact / defensepower));
 				}
 			} else {
-				targetMonster.getData().setHp(oldValue + (impact));
-
 				// If Hp is greater than max, set to max
-				if (targetMonster.getData().getHp() > targetMonster.getData().getMaxHp()) {
+				if ((oldValue + impact) > targetMonster.getData().getMaxHp()) {
 					targetMonster.getData().setHp(targetMonster.getData().getMaxHp());
+				} else {
+					targetMonster.getData().setHp(oldValue + impact);
 				}
 			}
 			break;
 		case "attackpower":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
-				targetMonster.getData().setAttackpower(oldValue - impact);
+				if ((oldValue - impact) < 1) {
+					targetMonster.getData().setAttackpower(1);
+				} else {
+					targetMonster.getData().setAttackpower(oldValue - impact);
+				}
 			} else {
-				targetMonster.getData().setAttackpower(oldValue + impact);
+				if ((oldValue + impact) > 50) {
+					targetMonster.getData().setAttackpower(50);
+				} else {
+					targetMonster.getData().setAttackpower(oldValue + impact);
+				}
 			}
 			break;
 		case "defensepower":
 			if (attack.getData().getTargetmonster().equals("opponent")) {
-				targetMonster.getData().setAttackpower(oldValue - impact);
+				if ((oldValue - impact) < 1) {
+					targetMonster.getData().setDefensepower(1);
+				} else {
+					targetMonster.getData().setDefensepower(oldValue - impact);
+				}
 			} else {
-				targetMonster.getData().setAttackpower(oldValue + impact);
-			}
-			break;
-		case "initiative":
-			if (attack.getData().getTargetmonster().equals("opponent")) {
-				targetMonster.getData().setAttackpower(oldValue - impact);
-			} else {
-				targetMonster.getData().setAttackpower(oldValue + impact);
+				if ((oldValue + impact) > 50) {
+					targetMonster.getData().setDefensepower(50);
+				} else {
+					targetMonster.getData().setDefensepower(oldValue + impact);
+				}
 			}
 			break;
 		}
