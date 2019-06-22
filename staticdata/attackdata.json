@@ -6,7 +6,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 4,
-            "imagepath": "patheiofo/to/image.png"
+            "picturepath": "patheiofo/to/image.png"
         },
         {
             "id": 1,
@@ -14,7 +14,7 @@
             "targetmonster": "player",
             "targetstat": "hp",
             "impact": 5,
-            "imagepath": "patheiofo/to/image.png"
+            "picturepath": "patheiofo/to/image.png"
         },
         {
             "id": 2,
@@ -22,7 +22,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 7,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 3,
@@ -30,7 +30,7 @@
             "targetmonster": "player",
             "targetstat": "attackpower",
             "impact": 2,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 4,
@@ -38,7 +38,7 @@
             "targetmonster": "player",
             "targetstat": "defensepower",
             "impact": 2,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 5,
@@ -46,7 +46,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 3,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 6,
@@ -54,7 +54,7 @@
             "targetmonster": "opponent",
             "targetstat": "defensepower",
             "impact": 3,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 7,
@@ -62,7 +62,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 4,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 8,
@@ -70,7 +70,7 @@
             "targetmonster": "player",
             "targetstat": "hp",
             "impact": 2,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 9,
@@ -78,7 +78,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 3,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 10,
@@ -86,7 +86,7 @@
             "targetmonster": "opponent",
             "targetstat": "attackpower",
             "impact": 3,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 11,
@@ -94,7 +94,7 @@
             "targetmonster": "opponent",
             "targetstat": "defensepower",
             "impact": 3,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 12,
@@ -102,7 +102,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 4,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 13,
@@ -110,7 +110,7 @@
             "targetmonster": "player",
             "targetstat": "attackpower",
             "impact": 4,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 14,
@@ -118,7 +118,7 @@
             "targetmonster": "opponent",
             "targetstat": "hp",
             "impact": 4,
-            "imagepath": "path"
+            "picturepath": "path"
         },
         {
             "id": 15,
@@ -126,7 +126,23 @@
             "targetmonster": "player",
             "targetstat": "attackpower",
             "impact": 4,
-            "imagepath": "path"
+            "picturepath": "path"
+        },
+        {
+            "id": 16,
+            "name": "Pain",
+            "targetmonster": "opponent",
+            "targetstat": "hp",
+            "impact": 5,
+            "picturepath": "NoPath"
+        },
+        {
+            "id": 17,
+            "name": "Crippling Depression",
+            "targetmonster": "opponent",
+            "targetstat": "attackpower",
+            "impact": 4,
+            "picturepath": "NoPath"
         }
         
     ]

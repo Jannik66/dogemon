@@ -73,7 +73,7 @@ public class Selection {
 		MonsterLogo0.setImage(new Image("file:" + Monsters.get(0).getData().getPicturelogopath()));
 		MonsterLogo1.setImage(new Image("file:" + Monsters.get(1).getData().getPicturelogopath()));
 		MonsterLogo2.setImage(new Image("file:" + Monsters.get(2).getData().getPicturelogopath()));
-		MonsterLogo3.setImage(new Image("file:" + Monsters.get(3).getData().getPicturebackpath()));
+		MonsterLogo3.setImage(new Image("file:" + Monsters.get(3).getData().getPicturelogopath()));
 		MonsterLogo4.setImage(new Image("file:" + Monsters.get(4).getData().getPicturelogopath()));
 		MonsterLogo5.setImage(new Image("file:" + Monsters.get(5).getData().getPicturelogopath()));
 		MonsterLogo6.setImage(new Image("file:" + Monsters.get(6).getData().getPicturelogopath()));

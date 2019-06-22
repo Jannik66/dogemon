@@ -43,9 +43,9 @@
             "attackpower": 5,
             "defensepower": 2,
             "initiative": 5,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/MothFront.png",
+            "picturebackpath": "staticdata/pictures/MothBack.png",
+            "picturelogopath": "staticdata/pictures/MothLogo.png",
             "attackids": [ 5, 6 ]
         },
         {
@@ -107,6 +107,18 @@
             "picturebackpath": "pathewiofero",
             "picturelogopath": "path",
             "attackids": [ 14, 15 ]
+        },
+        {
+            "id": 9,
+            "name": "Sad Cat",
+            "hp": 300,
+            "attackpower": 6,
+            "defensepower": 8,
+            "initiative": 2,
+            "picturefrontpath": "staticdata/pictures/SCCatFront.png",
+            "picturebackpath": "pathewiofero",
+            "picturelogopath": "path",
+            "attackids": [ 16, 17 ]
         }
         
     ]

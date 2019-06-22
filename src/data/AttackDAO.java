@@ -37,9 +37,9 @@ public class AttackDAO {
 			String targetmonster = arr.getJSONObject(i).getString("targetmonster");
 			String targetstat = arr.getJSONObject(i).getString("targetstat");
 			int impact = arr.getJSONObject(i).getInt("impact");
-			String imagepath = arr.getJSONObject(i).getString("imagepath");
+			String picturepath = arr.getJSONObject(i).getString("picturepath");
 
-			AttackDTOs.add(new AttackDTO(monster_id, name, targetmonster, targetstat, impact, imagepath));
+			AttackDTOs.add(new AttackDTO(monster_id, name, targetmonster, targetstat, impact, picturepath));
 		}
 
 		return AttackDTOs;
