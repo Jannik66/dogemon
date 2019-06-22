@@ -67,9 +67,9 @@
             "attackpower": 3,
             "defensepower": 6,
             "initiative": 10,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/monster/DudeFront.png",
+            "picturebackpath": "staticdata/pictures/monster/DudeBack.png",
+            "picturelogopath": "staticdata/pictures/monster/DudeLogo.png",
             "attackids": [ 9, 10 ]
         },
         {
