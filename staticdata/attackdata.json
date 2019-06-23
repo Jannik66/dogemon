@@ -13,7 +13,7 @@
             "name": "Eat Lööp",
             "targetmonster": "player",
             "targetstat": "hp",
-            "impact": 5,
+            "impact": 30,
             "picturepath": "staticdata/pictures/attacks/eatLoop.png"
         },
         {
@@ -69,7 +69,7 @@
             "name": "Grow",
             "targetmonster": "player",
             "targetstat": "hp",
-            "impact": 2,
+            "impact": 20,
             "picturepath": "staticdata/pictures/attacks/grow.png"
         },
         {
