@@ -91,9 +91,9 @@
             "attackpower": 7,
             "defensepower": 2,
             "initiative": 10,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/monster/DragFront.png",
+            "picturebackpath": "staticdata/pictures/monster/DragBack.png",
+            "picturelogopath": "staticdata/pictures/monster/DragLogo.png",
             "attackids": [ 12, 13 ]
         },
         {
@@ -103,9 +103,9 @@
             "attackpower": 5,
             "defensepower": 6,
             "initiative": 3,
-            "picturefrontpath": "ewrof3ufirhf",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturefrontpath": "staticdata/pictures/monster/SlimFront.png",
+            "picturebackpath": "staticdata/pictures/monster/SlimBack.png",
+            "picturelogopath": "staticdata/pictures/monster/SlimLogo.png",
             "attackids": [ 14, 15 ]
         },
         {
@@ -116,8 +116,8 @@
             "defensepower": 8,
             "initiative": 100,
             "picturefrontpath": "staticdata/pictures/monster/SCCatFront.png",
-            "picturebackpath": "pathewiofero",
-            "picturelogopath": "path",
+            "picturebackpath": "noPath",
+            "picturelogopath": "noPath",
             "attackids": [ 16, 17 ]
         }
         
