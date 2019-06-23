@@ -58,8 +58,6 @@ public class Monster {
 		case "defensepower":
 			data.setDefensepower(value);
 			break;
-		case "initiative":
-			data.setInitiative(value);
 		default:
 			System.out.println("Error in setSpecificStat of Monster. There is no Stat called " + stat + ".");
 			break;
