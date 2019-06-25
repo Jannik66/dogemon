@@ -194,15 +194,7 @@ public class BattleLogic {
 		}
 
 		newValue = targetMonster.getSpecificStat(attack.getData().getTargetstat());
-
-		// OPPONENT, HP: attackpower * impact / defensepower
-		// OPPONENT, attackpower: attackpower / impact
-		// OPPONENT, defense: defensepower / impact
-		// OPPONENT, initiative: initiative / impact
-		// PLAYER, HP: impact
-		// PLAYER, attackpower: attackpower * impact
-		// PLAYER, defense: defensepower * impact
-		// PLAYER, initiative: initiative * impact
+		
 		action += executeMonster.getData().getName() + " used " + attack.getData().getName() + ".";
 		action += "\n";
 		action += targetMonster.getData().getName() + "'s " + attack.getData().getTargetstat()
